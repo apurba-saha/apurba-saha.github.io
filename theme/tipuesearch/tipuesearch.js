@@ -1,3 +1,10 @@
+/*
+Tipue Search 7.1
+Copyright (c) 2019 Tipue
+Tipue Search is released under the MIT License
+http://www.tipue.com/search
+*/
+
 (function($) {
   $.fn.tipuesearch = function(options) {
     var set = $.extend(
@@ -22,12 +29,15 @@
       },
       options
     );
+
     return this.each(function() {
       var tipuesearch_t_c = 0;
+
       var tipue_search_w = "";
       if (set.newWindow) {
         tipue_search_w = ' target="_blank"';
       }
+
       function getURLP(name) {
         var locSearch = location.search;
         var splitted = new RegExp(
@@ -41,34 +51,43 @@
         }
         return searchString || null;
       }
+
       if (getURLP("q")) {
         $("#tipue_search_input").val(getURLP("q"));
         getTipueSearch(0, true);
       }
+
       $(this).keyup(function(event) {
         if (event.keyCode == "13") {
           getTipueSearch(0, true);
         }
       });
+
       function getTipueSearch(start, replace) {
         window.scrollTo(0, 0);
+
         var out = "";
         var show_replace = false;
         var show_stop = false;
         var standard = true;
         var c = 0;
         var found = [];
+
         var d_o = $("#tipue_search_input").val();
         d_o = d_o.replace(/\+/g, " ").replace(/\s\s+/g, " ");
+
         d_o = $.trim(d_o);
         var d = d_o.toLowerCase();
+
         if (
           (d.match('^"') && d.match('"$')) ||
           (d.match("^'") && d.match("'$"))
         ) {
           standard = false;
         }
+
         var d_w = d.split(" ");
+
         if (standard) {
           d = "";
           for (var i = 0; i < d_w.length; i++) {
@@ -88,6 +107,7 @@
         } else {
           d = d.substring(1, d.length - 1);
         }
+
         if (d.length >= set.minimumLength) {
           if (standard) {
             if (replace) {
@@ -105,6 +125,7 @@
               }
               d_w = d.split(" ");
             }
+
             var d_t = d;
             for (var i = 0; i < d_w.length; i++) {
               for (var f = 0; f < tipuesearch_stem.words.length; f++) {
@@ -114,6 +135,7 @@
               }
             }
             d_w = d_t.split(" ");
+
             for (var i = 0; i < tipuesearch.pages.length; i++) {
               var score = 0;
               var s_t = tipuesearch.pages[i].text;
@@ -140,6 +162,7 @@
                 if (tipuesearch.pages[i].url.search(pat) != -1) {
                   score += 20;
                 }
+
                 if (score != 0) {
                   for (var e = 0; e < tipuesearch_weight.weight.length; e++) {
                     if (
@@ -150,6 +173,7 @@
                     }
                   }
                 }
+
                 if (d_w[f].match("^-")) {
                   pat = new RegExp(d_w[f].substring(1), "i");
                   if (
@@ -161,6 +185,7 @@
                   }
                 }
               }
+
               if (score != 0) {
                 found.push({
                   score: score,
@@ -195,6 +220,7 @@
               if (tipuesearch.pages[i].url.search(pat) != -1) {
                 score += 20;
               }
+
               if (score != 0) {
                 for (var e = 0; e < tipuesearch_weight.weight.length; e++) {
                   if (
@@ -204,6 +230,7 @@
                   }
                 }
               }
+
               if (score != 0) {
                 found.push({
                   score: score,
@@ -217,12 +244,14 @@
               }
             }
           }
+
           if (c != 0) {
             if (set.showTitleCount && tipuesearch_t_c == 0) {
               var title = document.title;
               document.title = "(" + c + ") " + title;
               tipuesearch_t_c++;
             }
+
             if (c == 1) {
               out +=
                 '<div id="tipue_search_results_count">' + tipuesearch_string_4;
@@ -241,6 +270,7 @@
               set.showTime = false;
             }
             out += "</div>";
+
             if (set.showRelated && standard) {
               var ront = "";
               f = 0;
@@ -255,12 +285,14 @@
                   if (show_replace) {
                     d_o = d;
                   }
+
                   if (tipuesearch_related.Related[i].include) {
                     var r_d =
                       d_o + " " + tipuesearch_related.Related[i].related;
                   } else {
                     var r_d = tipuesearch_related.Related[i].related;
                   }
+
                   ront +=
                     '<a class="tipue_search_related_btn" id="' +
                     r_d +
@@ -276,6 +308,7 @@
                 out += ront;
               }
             }
+
             if (show_replace) {
               out +=
                 '<div id="tipue_search_replace">' +
@@ -288,17 +321,22 @@
                 d_r +
                 "</a></div>";
             }
+
             found.sort(function(a, b) {
               return b.score - a.score;
             });
+
             var l_o = 0;
+
             if (set.imageZoom) {
               out +=
                 '<div id="tipue_search_image_modal"><div class="tipue_search_image_close">&#10005;</div><div class="tipue_search_image_block"><a id="tipue_search_zoom_url"><img id="tipue_search_zoom_img"></a><div id="tipue_search_zoom_text"></div></div></div>';
             }
+
             for (var i = 0; i < found.length; i++) {
               if (l_o >= start && l_o < set.show + start) {
                 out += '<div class="tipue_search_result">';
+
                 out +=
                   '<div class="tipue_search_content_title"><a href="' +
                   found[i].url +
@@ -307,12 +345,14 @@
                   ">" +
                   found[i].title +
                   "</a></div>";
+
                 if (set.debug) {
                   out +=
                     '<div class="tipue_search_content_debug">Score: ' +
                     found[i].score +
                     "</div>";
                 }
+
                 if (set.showURL) {
                   var s_u = found[i].url.toLowerCase();
                   if (s_u.indexOf("http://") == 0) {
@@ -327,6 +367,7 @@
                     s_u +
                     "</a></div>";
                 }
+
                 if (found[i].img) {
                   if (set.imageZoom) {
                     out +=
@@ -350,8 +391,10 @@
                       '"></a></div>';
                   }
                 }
+
                 if (found[i].desc) {
                   var t = found[i].desc;
+
                   if (set.showContext) {
                     d_w = d.split(" ");
                     var s_1 = found[i].desc.toLowerCase().indexOf(d_w[0]);
@@ -360,11 +403,13 @@
                       var s_2 = t_1.indexOf(" ");
                       t_1 = t.substr(s_1 - set.contextBuffer + s_2);
                       t_1 = $.trim(t_1);
+
                       if (t_1.length > set.contextLength) {
                         t = "... " + t_1;
                       }
                     }
                   }
+
                   if (standard) {
                     d_w = d.split(" ");
                     for (var f = 0; f < d_w.length; f++) {
@@ -380,6 +425,7 @@
                       '<span class="tipue_search_content_bold">$1</span>'
                     );
                   }
+
                   var t_d = "";
                   var t_w = t.split(" ");
                   if (t_w.length < set.descriptiveWords) {
@@ -393,32 +439,39 @@
                   if (t_d.charAt(t_d.length - 1) != ".") {
                     t_d += " ...";
                   }
+
                   t_d = t_d.replace(
                     /h0011/g,
                     'span class="tipue_search_content_bold"'
                   );
                   t_d = t_d.replace(/h0012/g, "/span");
+
                   out +=
                     '<div class="tipue_search_content_text">' + t_d + "</div>";
                 }
+
                 if (found[i].note) {
                   out +=
                     '<div class="tipue_search_note">' +
                     found[i].note +
                     "</div>";
                 }
+
                 out += "</div>";
               }
               l_o++;
             }
+
             if (c > set.show) {
               var pages = Math.ceil(c / set.show);
               var page = start / set.show;
               if (set.footerPages < 3) {
                 set.footerPages = 3;
               }
+
               out +=
                 '<div id="tipue_search_foot"><ul id="tipue_search_foot_boxes">';
+
               if (start > 0) {
                 out +=
                   '<li role="navigation"><a class="tipue_search_foot_box" accesskey="b" id="' +
@@ -429,6 +482,7 @@
                   tipuesearch_string_6 +
                   "</a></li>";
               }
+
               if (page <= 2) {
                 var p_b = pages;
                 if (pages > set.footerPages) {
@@ -474,6 +528,7 @@
                   }
                 }
               }
+
               if (page + 1 != pages) {
                 out +=
                   '<li role="navigation"><a class="tipue_search_foot_box" accesskey="m" id="' +
@@ -484,6 +539,7 @@
                   tipuesearch_string_7 +
                   "</a></li>";
               }
+
               out += "</ul></div>";
             }
           } else {
@@ -516,22 +572,28 @@
             }
           }
         }
+
         $("#tipue_search_content")
           .hide()
           .html(out)
           .slideDown(200);
+
         $("#tipue_search_replaced").click(function() {
           getTipueSearch(0, false);
         });
+
         $(".tipue_search_related_btn").click(function() {
           $("#tipue_search_input").val($(this).attr("id"));
           getTipueSearch(0, true);
         });
+
         $(".tipue_search_image_zoom").click(function() {
           $("#tipue_search_image_modal").fadeIn(300);
           $("#tipue_search_zoom_img").attr("src", this.src);
+
           var z_u = $(this).attr("data-url");
           $("#tipue_search_zoom_url").attr("href", z_u);
+
           var z_o =
             this.alt +
             '<div class="tipue_search_zoom_options"><a href="' +
@@ -543,14 +605,18 @@
             '">' +
             tipuesearch_string_16 +
             "</a></div>";
+
           $("#tipue_search_zoom_text").html(z_o);
         });
+
         $(".tipue_search_image_close").click(function() {
           $("#tipue_search_image_modal").fadeOut(300);
         });
+
         $(".tipue_search_foot_box").click(function() {
           var id_v = $(this).attr("id");
           var id_a = id_v.split("_");
+
           getTipueSearch(parseInt(id_a[0]), id_a[1]);
         });
       }
