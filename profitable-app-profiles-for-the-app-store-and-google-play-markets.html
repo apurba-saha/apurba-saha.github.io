@@ -150,7 +150,3341 @@ tex2jax: { inlineMath: [["$","$"],["\\(","\\)"]] },
         </header>
         <div class="article_content">
             
+            <style type="text/css">/*!
+*
+* IPython notebook
+*
+*/
+/* CSS font colors for translated ANSI escape sequences */
+/* The color values are a mix of
+   http://www.xcolors.net/dl/baskerville-ivorylight and
+   http://www.xcolors.net/dl/euphrasia */
+.ansi-black-fg {
+  color: #3E424D;
+}
+.ansi-black-bg {
+  background-color: #3E424D;
+}
+.ansi-black-intense-fg {
+  color: #282C36;
+}
+.ansi-black-intense-bg {
+  background-color: #282C36;
+}
+.ansi-red-fg {
+  color: #E75C58;
+}
+.ansi-red-bg {
+  background-color: #E75C58;
+}
+.ansi-red-intense-fg {
+  color: #B22B31;
+}
+.ansi-red-intense-bg {
+  background-color: #B22B31;
+}
+.ansi-green-fg {
+  color: #00A250;
+}
+.ansi-green-bg {
+  background-color: #00A250;
+}
+.ansi-green-intense-fg {
+  color: #007427;
+}
+.ansi-green-intense-bg {
+  background-color: #007427;
+}
+.ansi-yellow-fg {
+  color: #DDB62B;
+}
+.ansi-yellow-bg {
+  background-color: #DDB62B;
+}
+.ansi-yellow-intense-fg {
+  color: #B27D12;
+}
+.ansi-yellow-intense-bg {
+  background-color: #B27D12;
+}
+.ansi-blue-fg {
+  color: #208FFB;
+}
+.ansi-blue-bg {
+  background-color: #208FFB;
+}
+.ansi-blue-intense-fg {
+  color: #0065CA;
+}
+.ansi-blue-intense-bg {
+  background-color: #0065CA;
+}
+.ansi-magenta-fg {
+  color: #D160C4;
+}
+.ansi-magenta-bg {
+  background-color: #D160C4;
+}
+.ansi-magenta-intense-fg {
+  color: #A03196;
+}
+.ansi-magenta-intense-bg {
+  background-color: #A03196;
+}
+.ansi-cyan-fg {
+  color: #60C6C8;
+}
+.ansi-cyan-bg {
+  background-color: #60C6C8;
+}
+.ansi-cyan-intense-fg {
+  color: #258F8F;
+}
+.ansi-cyan-intense-bg {
+  background-color: #258F8F;
+}
+.ansi-white-fg {
+  color: #C5C1B4;
+}
+.ansi-white-bg {
+  background-color: #C5C1B4;
+}
+.ansi-white-intense-fg {
+  color: #A1A6B2;
+}
+.ansi-white-intense-bg {
+  background-color: #A1A6B2;
+}
+.ansi-default-inverse-fg {
+  color: #FFFFFF;
+}
+.ansi-default-inverse-bg {
+  background-color: #000000;
+}
+.ansi-bold {
+  font-weight: bold;
+}
+.ansi-underline {
+  text-decoration: underline;
+}
+/* The following styles are deprecated an will be removed in a future version */
+.ansibold {
+  font-weight: bold;
+}
+.ansi-inverse {
+  outline: 0.5px dotted;
+}
+/* use dark versions for foreground, to improve visibility */
+.ansiblack {
+  color: black;
+}
+.ansired {
+  color: darkred;
+}
+.ansigreen {
+  color: darkgreen;
+}
+.ansiyellow {
+  color: #c4a000;
+}
+.ansiblue {
+  color: darkblue;
+}
+.ansipurple {
+  color: darkviolet;
+}
+.ansicyan {
+  color: steelblue;
+}
+.ansigray {
+  color: gray;
+}
+/* and light for background, for the same reason */
+.ansibgblack {
+  background-color: black;
+}
+.ansibgred {
+  background-color: red;
+}
+.ansibggreen {
+  background-color: green;
+}
+.ansibgyellow {
+  background-color: yellow;
+}
+.ansibgblue {
+  background-color: blue;
+}
+.ansibgpurple {
+  background-color: magenta;
+}
+.ansibgcyan {
+  background-color: cyan;
+}
+.ansibggray {
+  background-color: gray;
+}
+div.cell {
+  /* Old browsers */
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-box-align: stretch;
+  display: -moz-box;
+  -moz-box-orient: vertical;
+  -moz-box-align: stretch;
+  display: box;
+  box-orient: vertical;
+  box-align: stretch;
+  /* Modern browsers */
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  border-radius: 2px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  border-width: 1px;
+  border-style: solid;
+  border-color: transparent;
+  width: 100%;
+  padding: 5px;
+  /* This acts as a spacer between cells, that is outside the border */
+  margin: 0px;
+  outline: none;
+  position: relative;
+  overflow: visible;
+}
+div.cell:before {
+  position: absolute;
+  display: block;
+  top: -1px;
+  left: -1px;
+  width: 5px;
+  height: calc(100% +  2px);
+  content: '';
+  background: transparent;
+}
+div.cell.jupyter-soft-selected {
+  border-left-color: #E3F2FD;
+  border-left-width: 1px;
+  padding-left: 5px;
+  border-right-color: #E3F2FD;
+  border-right-width: 1px;
+  background: #E3F2FD;
+}
+@media print {
+  div.cell.jupyter-soft-selected {
+    border-color: transparent;
+  }
+}
+div.cell.selected,
+div.cell.selected.jupyter-soft-selected {
+  border-color: #ababab;
+}
+div.cell.selected:before,
+div.cell.selected.jupyter-soft-selected:before {
+  position: absolute;
+  display: block;
+  top: -1px;
+  left: -1px;
+  width: 5px;
+  height: calc(100% +  2px);
+  content: '';
+  background: #42A5F5;
+}
+@media print {
+  div.cell.selected,
+  div.cell.selected.jupyter-soft-selected {
+    border-color: transparent;
+  }
+}
+.edit_mode div.cell.selected {
+  border-color: #66BB6A;
+}
+.edit_mode div.cell.selected:before {
+  position: absolute;
+  display: block;
+  top: -1px;
+  left: -1px;
+  width: 5px;
+  height: calc(100% +  2px);
+  content: '';
+  background: #66BB6A;
+}
+@media print {
+  .edit_mode div.cell.selected {
+    border-color: transparent;
+  }
+}
+.prompt {
+  /* This needs to be wide enough for 3 digit prompt numbers: In[100]: */
+  min-width: 14ex;
+  /* This padding is tuned to match the padding on the CodeMirror editor. */
+  padding: 0.4em;
+  margin: 0px;
+  font-family: monospace;
+  text-align: right;
+  /* This has to match that of the the CodeMirror class line-height below */
+  line-height: 1.21429em;
+  /* Don't highlight prompt number selection */
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  /* Use default cursor */
+  cursor: default;
+}
+@media (max-width: 540px) {
+  .prompt {
+    text-align: left;
+  }
+}
+div.inner_cell {
+  min-width: 0;
+  /* Old browsers */
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-box-align: stretch;
+  display: -moz-box;
+  -moz-box-orient: vertical;
+  -moz-box-align: stretch;
+  display: box;
+  box-orient: vertical;
+  box-align: stretch;
+  /* Modern browsers */
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  /* Old browsers */
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  box-flex: 1;
+  /* Modern browsers */
+  flex: 1;
+}
+/* input_area and input_prompt must match in top border and margin for alignment */
+div.input_area {
+  border: 1px solid #cfcfcf;
+  border-radius: 2px;
+  background: #f7f7f7;
+  line-height: 1.21429em;
+}
+/* This is needed so that empty prompt areas can collapse to zero height when there
+   is no content in the output_subarea and the prompt. The main purpose of this is
+   to make sure that empty JavaScript output_subareas have no height. */
+div.prompt:empty {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+div.unrecognized_cell {
+  padding: 5px 5px 5px 0px;
+  /* Old browsers */
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  -webkit-box-align: stretch;
+  display: -moz-box;
+  -moz-box-orient: horizontal;
+  -moz-box-align: stretch;
+  display: box;
+  box-orient: horizontal;
+  box-align: stretch;
+  /* Modern browsers */
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+}
+div.unrecognized_cell .inner_cell {
+  border-radius: 2px;
+  padding: 5px;
+  font-weight: bold;
+  color: red;
+  border: 1px solid #cfcfcf;
+  background: #eaeaea;
+}
+div.unrecognized_cell .inner_cell a {
+  color: inherit;
+  text-decoration: none;
+}
+div.unrecognized_cell .inner_cell a:hover {
+  color: inherit;
+  text-decoration: none;
+}
+@media (max-width: 540px) {
+  div.unrecognized_cell > div.prompt {
+    display: none;
+  }
+}
+div.code_cell {
+  /* avoid page breaking on code cells when printing */
+}
+@media print {
+  div.code_cell {
+    page-break-inside: avoid;
+  }
+}
+/* any special styling for code cells that are currently running goes here */
+div.input {
+  page-break-inside: avoid;
+  /* Old browsers */
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  -webkit-box-align: stretch;
+  display: -moz-box;
+  -moz-box-orient: horizontal;
+  -moz-box-align: stretch;
+  display: box;
+  box-orient: horizontal;
+  box-align: stretch;
+  /* Modern browsers */
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+}
+@media (max-width: 540px) {
+  div.input {
+    /* Old browsers */
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-box-align: stretch;
+    display: -moz-box;
+    -moz-box-orient: vertical;
+    -moz-box-align: stretch;
+    display: box;
+    box-orient: vertical;
+    box-align: stretch;
+    /* Modern browsers */
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+/* input_area and input_prompt must match in top border and margin for alignment */
+div.input_prompt {
+  color: #303F9F;
+  border-top: 1px solid transparent;
+}
+div.input_area > div.highlight {
+  margin: 0.4em;
+  border: none;
+  padding: 0px;
+  background-color: transparent;
+}
+div.input_area > div.highlight > pre {
+  margin: 0px;
+  border: none;
+  padding: 0px;
+  background-color: transparent;
+}
+/* The following gets added to the <head> if it is detected that the user has a
+ * monospace font with inconsistent normal/bold/italic height.  See
+ * notebookmain.js.  Such fonts will have keywords vertically offset with
+ * respect to the rest of the text.  The user should select a better font.
+ * See: https://github.com/ipython/ipython/issues/1503
+ *
+ * .CodeMirror span {
+ *      vertical-align: bottom;
+ * }
+ */
+.CodeMirror {
+  line-height: 1.21429em;
+  /* Changed from 1em to our global default */
+  font-size: 14px;
+  height: auto;
+  /* Changed to auto to autogrow */
+  background: none;
+  /* Changed from white to allow our bg to show through */
+}
+.CodeMirror-scroll {
+  /*  The CodeMirror docs are a bit fuzzy on if overflow-y should be hidden or visible.*/
+  /*  We have found that if it is visible, vertical scrollbars appear with font size changes.*/
+  overflow-y: hidden;
+  overflow-x: auto;
+}
+.CodeMirror-lines {
+  /* In CM2, this used to be 0.4em, but in CM3 it went to 4px. We need the em value because */
+  /* we have set a different line-height and want this to scale with that. */
+  /* Note that this should set vertical padding only, since CodeMirror assumes
+       that horizontal padding will be set on CodeMirror pre */
+  padding: 0.4em 0;
+}
+.CodeMirror-linenumber {
+  padding: 0 8px 0 4px;
+}
+.CodeMirror-gutters {
+  border-bottom-left-radius: 2px;
+  border-top-left-radius: 2px;
+}
+.CodeMirror pre {
+  /* In CM3 this went to 4px from 0 in CM2. This sets horizontal padding only,
+    use .CodeMirror-lines for vertical */
+  padding: 0 0.4em;
+  border: 0;
+  border-radius: 0;
+}
+.CodeMirror-cursor {
+  border-left: 1.4px solid black;
+}
+@media screen and (min-width: 2138px) and (max-width: 4319px) {
+  .CodeMirror-cursor {
+    border-left: 2px solid black;
+  }
+}
+@media screen and (min-width: 4320px) {
+  .CodeMirror-cursor {
+    border-left: 4px solid black;
+  }
+}
+/*
+
+Original style from softwaremaniacs.org (c) Ivan Sagalaev <Maniac@SoftwareManiacs.Org>
+Adapted from GitHub theme
+
+*/
+.highlight-base {
+  color: #000;
+}
+.highlight-variable {
+  color: #000;
+}
+.highlight-variable-2 {
+  color: #1a1a1a;
+}
+.highlight-variable-3 {
+  color: #333333;
+}
+.highlight-string {
+  color: #BA2121;
+}
+.highlight-comment {
+  color: #408080;
+  font-style: italic;
+}
+.highlight-number {
+  color: #080;
+}
+.highlight-atom {
+  color: #88F;
+}
+.highlight-keyword {
+  color: #008000;
+  font-weight: bold;
+}
+.highlight-builtin {
+  color: #008000;
+}
+.highlight-error {
+  color: #f00;
+}
+.highlight-operator {
+  color: #AA22FF;
+  font-weight: bold;
+}
+.highlight-meta {
+  color: #AA22FF;
+}
+/* previously not defined, copying from default codemirror */
+.highlight-def {
+  color: #00f;
+}
+.highlight-string-2 {
+  color: #f50;
+}
+.highlight-qualifier {
+  color: #555;
+}
+.highlight-bracket {
+  color: #997;
+}
+.highlight-tag {
+  color: #170;
+}
+.highlight-attribute {
+  color: #00c;
+}
+.highlight-header {
+  color: blue;
+}
+.highlight-quote {
+  color: #090;
+}
+.highlight-link {
+  color: #00c;
+}
+/* apply the same style to codemirror */
+.cm-s-ipython span.cm-keyword {
+  color: #008000;
+  font-weight: bold;
+}
+.cm-s-ipython span.cm-atom {
+  color: #88F;
+}
+.cm-s-ipython span.cm-number {
+  color: #080;
+}
+.cm-s-ipython span.cm-def {
+  color: #00f;
+}
+.cm-s-ipython span.cm-variable {
+  color: #000;
+}
+.cm-s-ipython span.cm-operator {
+  color: #AA22FF;
+  font-weight: bold;
+}
+.cm-s-ipython span.cm-variable-2 {
+  color: #1a1a1a;
+}
+.cm-s-ipython span.cm-variable-3 {
+  color: #333333;
+}
+.cm-s-ipython span.cm-comment {
+  color: #408080;
+  font-style: italic;
+}
+.cm-s-ipython span.cm-string {
+  color: #BA2121;
+}
+.cm-s-ipython span.cm-string-2 {
+  color: #f50;
+}
+.cm-s-ipython span.cm-meta {
+  color: #AA22FF;
+}
+.cm-s-ipython span.cm-qualifier {
+  color: #555;
+}
+.cm-s-ipython span.cm-builtin {
+  color: #008000;
+}
+.cm-s-ipython span.cm-bracket {
+  color: #997;
+}
+.cm-s-ipython span.cm-tag {
+  color: #170;
+}
+.cm-s-ipython span.cm-attribute {
+  color: #00c;
+}
+.cm-s-ipython span.cm-header {
+  color: blue;
+}
+.cm-s-ipython span.cm-quote {
+  color: #090;
+}
+.cm-s-ipython span.cm-link {
+  color: #00c;
+}
+.cm-s-ipython span.cm-error {
+  color: #f00;
+}
+.cm-s-ipython span.cm-tab {
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAMCAYAAAAkuj5RAAAAAXNSR0IArs4c6QAAAGFJREFUSMft1LsRQFAQheHPowAKoACx3IgEKtaEHujDjORSgWTH/ZOdnZOcM/sgk/kFFWY0qV8foQwS4MKBCS3qR6ixBJvElOobYAtivseIE120FaowJPN75GMu8j/LfMwNjh4HUpwg4LUAAAAASUVORK5CYII=);
+  background-position: right;
+  background-repeat: no-repeat;
+}
+div.output_wrapper {
+  /* this position must be relative to enable descendents to be absolute within it */
+  position: relative;
+  /* Old browsers */
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-box-align: stretch;
+  display: -moz-box;
+  -moz-box-orient: vertical;
+  -moz-box-align: stretch;
+  display: box;
+  box-orient: vertical;
+  box-align: stretch;
+  /* Modern browsers */
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  z-index: 1;
+}
+/* class for the output area when it should be height-limited */
+div.output_scroll {
+  /* ideally, this would be max-height, but FF barfs all over that */
+  height: 24em;
+  /* FF needs this *and the wrapper* to specify full width, or it will shrinkwrap */
+  width: 100%;
+  overflow: auto;
+  border-radius: 2px;
+  -webkit-box-shadow: inset 0 2px 8px rgba(0, 0, 0, 0.8);
+  box-shadow: inset 0 2px 8px rgba(0, 0, 0, 0.8);
+  display: block;
+}
+/* output div while it is collapsed */
+div.output_collapsed {
+  margin: 0px;
+  padding: 0px;
+  /* Old browsers */
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-box-align: stretch;
+  display: -moz-box;
+  -moz-box-orient: vertical;
+  -moz-box-align: stretch;
+  display: box;
+  box-orient: vertical;
+  box-align: stretch;
+  /* Modern browsers */
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+div.out_prompt_overlay {
+  height: 100%;
+  padding: 0px 0.4em;
+  position: absolute;
+  border-radius: 2px;
+}
+div.out_prompt_overlay:hover {
+  /* use inner shadow to get border that is computed the same on WebKit/FF */
+  -webkit-box-shadow: inset 0 0 1px #000;
+  box-shadow: inset 0 0 1px #000;
+  background: rgba(240, 240, 240, 0.5);
+}
+div.output_prompt {
+  color: #D84315;
+}
+/* This class is the outer container of all output sections. */
+div.output_area {
+  padding: 0px;
+  page-break-inside: avoid;
+  /* Old browsers */
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  -webkit-box-align: stretch;
+  display: -moz-box;
+  -moz-box-orient: horizontal;
+  -moz-box-align: stretch;
+  display: box;
+  box-orient: horizontal;
+  box-align: stretch;
+  /* Modern browsers */
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+}
+div.output_area .MathJax_Display {
+  text-align: left !important;
+}
+div.output_area 
+div.output_area 
+div.output_area img,
+div.output_area svg {
+  max-width: 100%;
+  height: auto;
+}
+div.output_area img.unconfined,
+div.output_area svg.unconfined {
+  max-width: none;
+}
+div.output_area .mglyph > img {
+  max-width: none;
+}
+/* This is needed to protect the pre formating from global settings such
+   as that of bootstrap */
+.output {
+  /* Old browsers */
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-box-align: stretch;
+  display: -moz-box;
+  -moz-box-orient: vertical;
+  -moz-box-align: stretch;
+  display: box;
+  box-orient: vertical;
+  box-align: stretch;
+  /* Modern browsers */
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+@media (max-width: 540px) {
+  div.output_area {
+    /* Old browsers */
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-box-align: stretch;
+    display: -moz-box;
+    -moz-box-orient: vertical;
+    -moz-box-align: stretch;
+    display: box;
+    box-orient: vertical;
+    box-align: stretch;
+    /* Modern browsers */
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+div.output_area pre {
+  margin: 0;
+  padding: 1px 0 1px 0;
+  border: 0;
+  vertical-align: baseline;
+  color: black;
+  background-color: transparent;
+  border-radius: 0;
+}
+/* This class is for the output subarea inside the output_area and after
+   the prompt div. */
+div.output_subarea {
+  overflow-x: auto;
+  padding: 0.4em;
+  /* Old browsers */
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  box-flex: 1;
+  /* Modern browsers */
+  flex: 1;
+  max-width: calc(100% - 14ex);
+}
+div.output_scroll div.output_subarea {
+  overflow-x: visible;
+}
+/* The rest of the output_* classes are for special styling of the different
+   output types */
+/* all text output has this class: */
+div.output_text {
+  text-align: left;
+  color: #000;
+  /* This has to match that of the the CodeMirror class line-height below */
+  line-height: 1.21429em;
+}
+/* stdout/stderr are 'text' as well as 'stream', but execute_result/error are *not* streams */
+div.output_stderr {
+  background: #fdd;
+  /* very light red background for stderr */
+}
+div.output_latex {
+  text-align: left;
+}
+/* Empty output_javascript divs should have no height */
+div.output_javascript:empty {
+  padding: 0;
+}
+.js-error {
+  color: darkred;
+}
+/* raw_input styles */
+div.raw_input_container {
+  line-height: 1.21429em;
+  padding-top: 5px;
+}
+pre.raw_input_prompt {
+  /* nothing needed here. */
+}
+input.raw_input {
+  font-family: monospace;
+  font-size: inherit;
+  color: inherit;
+  width: auto;
+  /* make sure input baseline aligns with prompt */
+  vertical-align: baseline;
+  /* padding + margin = 0.5em between prompt and cursor */
+  padding: 0em 0.25em;
+  margin: 0em 0.25em;
+}
+input.raw_input:focus {
+  box-shadow: none;
+}
+p.p-space {
+  margin-bottom: 10px;
+}
+div.output_unrecognized {
+  padding: 5px;
+  font-weight: bold;
+  color: red;
+}
+div.output_unrecognized a {
+  color: inherit;
+  text-decoration: none;
+}
+div.output_unrecognized a:hover {
+  color: inherit;
+  text-decoration: none;
+}
+.rendered_html {
+  color: #000;
+  /* any extras will just be numbers: */
+}
+
+
+
+.rendered_html :link {
+  text-decoration: underline;
+}
+.rendered_html :visited {
+  text-decoration: underline;
+}
+
+
+
+
+
+
+.rendered_html h1:first-child {
+  margin-top: 0.538em;
+}
+.rendered_html h2:first-child {
+  margin-top: 0.636em;
+}
+.rendered_html h3:first-child {
+  margin-top: 0.777em;
+}
+.rendered_html h4:first-child {
+  margin-top: 1em;
+}
+.rendered_html h5:first-child {
+  margin-top: 1em;
+}
+.rendered_html h6:first-child {
+  margin-top: 1em;
+}
+.rendered_html ul:not(.list-inline),
+.rendered_html ol:not(.list-inline) {
+  padding-left: 2em;
+}
+
+
+
+
+
+
+
+
+.rendered_html * + ul {
+  margin-top: 1em;
+}
+.rendered_html * + ol {
+  margin-top: 1em;
+}
+
+
+
+
+
+.rendered_html pre,
+
+
+
+
+.rendered_html tr,
+.rendered_html th,
+
+
+.rendered_html tbody tr:nth-child(odd) {
+  background: #f5f5f5;
+}
+.rendered_html tbody tr:hover {
+  background: rgba(66, 165, 245, 0.2);
+}
+.rendered_html * + table {
+  margin-top: 1em;
+}
+
+.rendered_html * + p {
+  margin-top: 1em;
+}
+
+.rendered_html * + img {
+  margin-top: 1em;
+}
+.rendered_html img,
+
+.rendered_html img.unconfined,
+
+
+.rendered_html * + .alert {
+  margin-top: 1em;
+}
+[dir="rtl"] 
+div.text_cell {
+  /* Old browsers */
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  -webkit-box-align: stretch;
+  display: -moz-box;
+  -moz-box-orient: horizontal;
+  -moz-box-align: stretch;
+  display: box;
+  box-orient: horizontal;
+  box-align: stretch;
+  /* Modern browsers */
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+}
+@media (max-width: 540px) {
+  div.text_cell > div.prompt {
+    display: none;
+  }
+}
+div.text_cell_render {
+  /*font-family: "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;*/
+  outline: none;
+  resize: none;
+  width: inherit;
+  border-style: none;
+  padding: 0.5em 0.5em 0.5em 0.4em;
+  color: #000;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+a.anchor-link:link {
+  text-decoration: none;
+  padding: 0px 20px;
+  visibility: hidden;
+}
+h1:hover .anchor-link,
+h2:hover .anchor-link,
+h3:hover .anchor-link,
+h4:hover .anchor-link,
+h5:hover .anchor-link,
+h6:hover .anchor-link {
+  visibility: visible;
+}
+.text_cell.rendered .input_area {
+  display: none;
+}
+.text_cell.rendered 
+.text_cell.rendered .rendered_html tr,
+.text_cell.rendered .rendered_html th,
+.text_cell.rendered 
+.text_cell.unrendered .text_cell_render {
+  display: none;
+}
+.text_cell .dropzone .input_area {
+  border: 2px dashed #bababa;
+  margin: -1px;
+}
+.cm-header-1,
+.cm-header-2,
+.cm-header-3,
+.cm-header-4,
+.cm-header-5,
+.cm-header-6 {
+  font-weight: bold;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.cm-header-1 {
+  font-size: 185.7%;
+}
+.cm-header-2 {
+  font-size: 157.1%;
+}
+.cm-header-3 {
+  font-size: 128.6%;
+}
+.cm-header-4 {
+  font-size: 110%;
+}
+.cm-header-5 {
+  font-size: 100%;
+  font-style: italic;
+}
+.cm-header-6 {
+  font-size: 100%;
+  font-style: italic;
+}
+</style>
+<style type="text/css">pre { line-height: 125%; }
+td.linenos .normal { color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px; }
+span.linenos { color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px; }
+td.linenos .special { color: #000000; background-color: #ffffc0; padding-left: 5px; padding-right: 5px; }
+span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 5px; padding-right: 5px; }
+.highlight .hll { background-color: #ffffcc }
+.highlight { background: #f8f8f8; }
+.highlight .c { color: #3D7B7B; font-style: italic } /* Comment */
+.highlight .err { border: 1px solid #FF0000 } /* Error */
+.highlight .k { color: #008000; font-weight: bold } /* Keyword */
+.highlight .o { color: #666666 } /* Operator */
+.highlight .ch { color: #3D7B7B; font-style: italic } /* Comment.Hashbang */
+.highlight .cm { color: #3D7B7B; font-style: italic } /* Comment.Multiline */
+.highlight .cp { color: #9C6500 } /* Comment.Preproc */
+.highlight .cpf { color: #3D7B7B; font-style: italic } /* Comment.PreprocFile */
+.highlight .c1 { color: #3D7B7B; font-style: italic } /* Comment.Single */
+.highlight .cs { color: #3D7B7B; font-style: italic } /* Comment.Special */
+.highlight .gd { color: #A00000 } /* Generic.Deleted */
+.highlight .ge { font-style: italic } /* Generic.Emph */
+.highlight .gr { color: #E40000 } /* Generic.Error */
+.highlight .gh { color: #000080; font-weight: bold } /* Generic.Heading */
+.highlight .gi { color: #008400 } /* Generic.Inserted */
+.highlight .go { color: #717171 } /* Generic.Output */
+.highlight .gp { color: #000080; font-weight: bold } /* Generic.Prompt */
+.highlight .gs { font-weight: bold } /* Generic.Strong */
+.highlight .gu { color: #800080; font-weight: bold } /* Generic.Subheading */
+.highlight .gt { color: #0044DD } /* Generic.Traceback */
+.highlight .kc { color: #008000; font-weight: bold } /* Keyword.Constant */
+.highlight .kd { color: #008000; font-weight: bold } /* Keyword.Declaration */
+.highlight .kn { color: #008000; font-weight: bold } /* Keyword.Namespace */
+.highlight .kp { color: #008000 } /* Keyword.Pseudo */
+.highlight .kr { color: #008000; font-weight: bold } /* Keyword.Reserved */
+.highlight .kt { color: #B00040 } /* Keyword.Type */
+.highlight .m { color: #666666 } /* Literal.Number */
+.highlight .s { color: #BA2121 } /* Literal.String */
+.highlight .na { color: #687822 } /* Name.Attribute */
+.highlight .nb { color: #008000 } /* Name.Builtin */
+.highlight .nc { color: #0000FF; font-weight: bold } /* Name.Class */
+.highlight .no { color: #880000 } /* Name.Constant */
+.highlight .nd { color: #AA22FF } /* Name.Decorator */
+.highlight .ni { color: #717171; font-weight: bold } /* Name.Entity */
+.highlight .ne { color: #CB3F38; font-weight: bold } /* Name.Exception */
+.highlight .nf { color: #0000FF } /* Name.Function */
+.highlight .nl { color: #767600 } /* Name.Label */
+.highlight .nn { color: #0000FF; font-weight: bold } /* Name.Namespace */
+.highlight .nt { color: #008000; font-weight: bold } /* Name.Tag */
+.highlight .nv { color: #19177C } /* Name.Variable */
+.highlight .ow { color: #AA22FF; font-weight: bold } /* Operator.Word */
+.highlight .w { color: #bbbbbb } /* Text.Whitespace */
+.highlight .mb { color: #666666 } /* Literal.Number.Bin */
+.highlight .mf { color: #666666 } /* Literal.Number.Float */
+.highlight .mh { color: #666666 } /* Literal.Number.Hex */
+.highlight .mi { color: #666666 } /* Literal.Number.Integer */
+.highlight .mo { color: #666666 } /* Literal.Number.Oct */
+.highlight .sa { color: #BA2121 } /* Literal.String.Affix */
+.highlight .sb { color: #BA2121 } /* Literal.String.Backtick */
+.highlight .sc { color: #BA2121 } /* Literal.String.Char */
+.highlight .dl { color: #BA2121 } /* Literal.String.Delimiter */
+.highlight .sd { color: #BA2121; font-style: italic } /* Literal.String.Doc */
+.highlight .s2 { color: #BA2121 } /* Literal.String.Double */
+.highlight .se { color: #AA5D1F; font-weight: bold } /* Literal.String.Escape */
+.highlight .sh { color: #BA2121 } /* Literal.String.Heredoc */
+.highlight .si { color: #A45A77; font-weight: bold } /* Literal.String.Interpol */
+.highlight .sx { color: #008000 } /* Literal.String.Other */
+.highlight .sr { color: #A45A77 } /* Literal.String.Regex */
+.highlight .s1 { color: #BA2121 } /* Literal.String.Single */
+.highlight .ss { color: #19177C } /* Literal.String.Symbol */
+.highlight .bp { color: #008000 } /* Name.Builtin.Pseudo */
+.highlight .fm { color: #0000FF } /* Name.Function.Magic */
+.highlight .vc { color: #19177C } /* Name.Variable.Class */
+.highlight .vg { color: #19177C } /* Name.Variable.Global */
+.highlight .vi { color: #19177C } /* Name.Variable.Instance */
+.highlight .vm { color: #19177C } /* Name.Variable.Magic */
+.highlight .il { color: #666666 } /* Literal.Number.Integer.Long */</style><div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Analysis-of-Google-Play-and-Apple-store-apps">Analysis of Google Play and Apple store apps<a class="anchor-link" href="#Analysis-of-Google-Play-and-Apple-store-apps">&#182;</a></h2><p>The goal of this project is analyzing apps in Google Play and Apple store to understand the type of apps that attract more users. Based on the analysis, a new app will be developed for english speaking users, which will be available for free on the popular app stores. The developers will earn revenue through in-app ads. The more users that see and engage with adds, the better.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[1]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Open the datasets and store them as lists</span>
+<span class="kn">from</span> <span class="nn">csv</span> <span class="kn">import</span> <span class="n">reader</span>
+<span class="n">applestore_dataset</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;AppleStore.csv&#39;</span><span class="p">,</span> <span class="n">encoding</span> <span class="o">=</span> <span class="s1">&#39;utf8&#39;</span><span class="p">)</span>
+<span class="n">googleplay_dataset</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;googleplaystore.csv&#39;</span><span class="p">,</span> <span class="n">encoding</span> <span class="o">=</span> <span class="s1">&#39;utf8&#39;</span><span class="p">)</span>
+<span class="n">apple_data</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">reader</span><span class="p">(</span><span class="n">applestore_dataset</span><span class="p">))</span>
+<span class="n">google_data</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">reader</span><span class="p">(</span><span class="n">googleplay_dataset</span><span class="p">))</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># A function for exploring data from a dataset. The function</span>
+<span class="c1"># assumes that the dataset parameter doesn&#39;t have a header row</span>
+<span class="k">def</span> <span class="nf">explore_data</span><span class="p">(</span><span class="n">dataset</span><span class="p">,</span> <span class="n">start</span><span class="p">,</span> <span class="n">end</span><span class="p">,</span> <span class="n">rows_and_columns</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
+    <span class="n">dataset_slice</span> <span class="o">=</span> <span class="n">dataset</span><span class="p">[</span><span class="n">start</span><span class="p">:</span><span class="n">end</span><span class="p">]</span>    
+    <span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">dataset_slice</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">row</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span> <span class="c1"># adds a new (empty) line after each row</span>
+
+    <span class="k">if</span> <span class="n">rows_and_columns</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Number of rows:&#39;</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">dataset</span><span class="p">))</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Number of columns:&#39;</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">dataset</span><span class="p">[</span><span class="mi">0</span><span class="p">]))</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Printing first five rows of AppleStore dataset...&quot;</span><span class="p">)</span>
+<span class="n">explore_data</span><span class="p">(</span><span class="n">apple_data</span><span class="p">[</span><span class="mi">1</span><span class="p">:],</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="kc">True</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Now printing first five rows of GooglePlay dataset...&quot;</span><span class="p">)</span>
+<span class="n">explore_data</span><span class="p">(</span><span class="n">google_data</span><span class="p">[</span><span class="mi">1</span><span class="p">:],</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="kc">True</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Printing first five rows of AppleStore dataset...
+[&#39;284882215&#39;, &#39;Facebook&#39;, &#39;389879808&#39;, &#39;USD&#39;, &#39;0.0&#39;, &#39;2974676&#39;, &#39;212&#39;, &#39;3.5&#39;, &#39;3.5&#39;, &#39;95.0&#39;, &#39;4+&#39;, &#39;Social Networking&#39;, &#39;37&#39;, &#39;1&#39;, &#39;29&#39;, &#39;1&#39;]
+
+
+[&#39;389801252&#39;, &#39;Instagram&#39;, &#39;113954816&#39;, &#39;USD&#39;, &#39;0.0&#39;, &#39;2161558&#39;, &#39;1289&#39;, &#39;4.5&#39;, &#39;4.0&#39;, &#39;10.23&#39;, &#39;12+&#39;, &#39;Photo &amp; Video&#39;, &#39;37&#39;, &#39;0&#39;, &#39;29&#39;, &#39;1&#39;]
+
+
+[&#39;529479190&#39;, &#39;Clash of Clans&#39;, &#39;116476928&#39;, &#39;USD&#39;, &#39;0.0&#39;, &#39;2130805&#39;, &#39;579&#39;, &#39;4.5&#39;, &#39;4.5&#39;, &#39;9.24.12&#39;, &#39;9+&#39;, &#39;Games&#39;, &#39;38&#39;, &#39;5&#39;, &#39;18&#39;, &#39;1&#39;]
+
+
+[&#39;420009108&#39;, &#39;Temple Run&#39;, &#39;65921024&#39;, &#39;USD&#39;, &#39;0.0&#39;, &#39;1724546&#39;, &#39;3842&#39;, &#39;4.5&#39;, &#39;4.0&#39;, &#39;1.6.2&#39;, &#39;9+&#39;, &#39;Games&#39;, &#39;40&#39;, &#39;5&#39;, &#39;1&#39;, &#39;1&#39;]
+
+
+[&#39;284035177&#39;, &#39;Pandora - Music &amp; Radio&#39;, &#39;130242560&#39;, &#39;USD&#39;, &#39;0.0&#39;, &#39;1126879&#39;, &#39;3594&#39;, &#39;4.0&#39;, &#39;4.5&#39;, &#39;8.4.1&#39;, &#39;12+&#39;, &#39;Music&#39;, &#39;37&#39;, &#39;4&#39;, &#39;1&#39;, &#39;1&#39;]
+
+
+Number of rows: 7197
+Number of columns: 16
+
+
+Now printing first five rows of GooglePlay dataset...
+[&#39;Photo Editor &amp; Candy Camera &amp; Grid &amp; ScrapBook&#39;, &#39;ART_AND_DESIGN&#39;, &#39;4.1&#39;, &#39;159&#39;, &#39;19M&#39;, &#39;10,000+&#39;, &#39;Free&#39;, &#39;0&#39;, &#39;Everyone&#39;, &#39;Art &amp; Design&#39;, &#39;January 7, 2018&#39;, &#39;1.0.0&#39;, &#39;4.0.3 and up&#39;]
+
+
+[&#39;Coloring book moana&#39;, &#39;ART_AND_DESIGN&#39;, &#39;3.9&#39;, &#39;967&#39;, &#39;14M&#39;, &#39;500,000+&#39;, &#39;Free&#39;, &#39;0&#39;, &#39;Everyone&#39;, &#39;Art &amp; Design;Pretend Play&#39;, &#39;January 15, 2018&#39;, &#39;2.0.0&#39;, &#39;4.0.3 and up&#39;]
+
+
+[&#39;U Launcher Lite – FREE Live Cool Themes, Hide Apps&#39;, &#39;ART_AND_DESIGN&#39;, &#39;4.7&#39;, &#39;87510&#39;, &#39;8.7M&#39;, &#39;5,000,000+&#39;, &#39;Free&#39;, &#39;0&#39;, &#39;Everyone&#39;, &#39;Art &amp; Design&#39;, &#39;August 1, 2018&#39;, &#39;1.2.4&#39;, &#39;4.0.3 and up&#39;]
+
+
+[&#39;Sketch - Draw &amp; Paint&#39;, &#39;ART_AND_DESIGN&#39;, &#39;4.5&#39;, &#39;215644&#39;, &#39;25M&#39;, &#39;50,000,000+&#39;, &#39;Free&#39;, &#39;0&#39;, &#39;Teen&#39;, &#39;Art &amp; Design&#39;, &#39;June 8, 2018&#39;, &#39;Varies with device&#39;, &#39;4.2 and up&#39;]
+
+
+[&#39;Pixel Draw - Number Art Coloring Book&#39;, &#39;ART_AND_DESIGN&#39;, &#39;4.3&#39;, &#39;967&#39;, &#39;2.8M&#39;, &#39;100,000+&#39;, &#39;Free&#39;, &#39;0&#39;, &#39;Everyone&#39;, &#39;Art &amp; Design;Creativity&#39;, &#39;June 20, 2018&#39;, &#39;1.1&#39;, &#39;4.4 and up&#39;]
+
+
+Number of rows: 10841
+Number of columns: 13
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>At this point, it is clear that each element of this dataset is a string. So, datatype conversion may be necessary in future for performing any arithmatic operation on numbers. Also, the number of columns are different. Let's find out what the colums represent.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># print the header rows of each dataset</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">apple_data</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">google_data</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>[&#39;id&#39;, &#39;track_name&#39;, &#39;size_bytes&#39;, &#39;currency&#39;, &#39;price&#39;, &#39;rating_count_tot&#39;, &#39;rating_count_ver&#39;, &#39;user_rating&#39;, &#39;user_rating_ver&#39;, &#39;ver&#39;, &#39;cont_rating&#39;, &#39;prime_genre&#39;, &#39;sup_devices.num&#39;, &#39;ipadSc_urls.num&#39;, &#39;lang.num&#39;, &#39;vpp_lic&#39;]
+
+
+[&#39;App&#39;, &#39;Category&#39;, &#39;Rating&#39;, &#39;Reviews&#39;, &#39;Size&#39;, &#39;Installs&#39;, &#39;Type&#39;, &#39;Price&#39;, &#39;Content Rating&#39;, &#39;Genres&#39;, &#39;Last Updated&#39;, &#39;Current Ver&#39;, &#39;Android Ver&#39;]
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>It is not clear from the header rows what each column describes. Let's check the documentation of these two datasets to get a better idea. We can find the documentation of the Google App dataset <a href="https://www.kaggle.com/lava18/google-play-store-apps">here</a>. Similarly, the documentation of the AppleStore dataset is available in <a href="https://www.kaggle.com/ramamet4/app-store-apple-data-set-10k-apps">this link</a>.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Now it's fun time! Let's check if the data is clean i.e. we need to check if the dataset contains any wrong data or duplicate data. At first, let's try to clean the Google Play dataset. If we carefully read <a href="https://www.kaggle.com/lava18/google-play-store-apps/discussion">this</a> discussion section, we will find that the row with index level 10473 (considering header row) has wrong data.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">google_data</span><span class="p">[</span><span class="mi">10473</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Length of the incorrect row: &#39;</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">google_data</span><span class="p">[</span><span class="mi">10473</span><span class="p">]))</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>[&#39;Life Made WI-Fi Touchscreen Photo Frame&#39;, &#39;1.9&#39;, &#39;19&#39;, &#39;3.0M&#39;, &#39;1,000+&#39;, &#39;Free&#39;, &#39;0&#39;, &#39;Everyone&#39;, &#39;&#39;, &#39;February 11, 2018&#39;, &#39;1.0.19&#39;, &#39;4.0 and up&#39;]
+Length of the incorrect row:  12
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Clearly, one data is missing from this row, as the length of header row is 13. After some deep observation, we find that the data for the 'Category' column is missing from the row. So, we delete this row with missing data.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">del</span> <span class="n">google_data</span><span class="p">[</span><span class="mi">10473</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">google_data</span><span class="p">[</span><span class="mi">10473</span><span class="p">])</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>[&#39;osmino Wi-Fi: free WiFi&#39;, &#39;TOOLS&#39;, &#39;4.2&#39;, &#39;134203&#39;, &#39;4.1M&#39;, &#39;10,000,000+&#39;, &#39;Free&#39;, &#39;0&#39;, &#39;Everyone&#39;, &#39;Tools&#39;, &#39;August 7, 2018&#39;, &#39;6.06.14&#39;, &#39;4.4 and up&#39;]
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Now, it's time to check for duplicate data. The following <code>check_duplicate()</code> function will check for dulicates in a dataset. If any duplicate is found, it puts the duplicate rows inside the list called <code>duplicate_apps</code>.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">check_duplicates</span><span class="p">(</span><span class="n">dataset</span><span class="p">,</span> <span class="n">appname_index</span><span class="p">,</span> <span class="n">header</span> <span class="o">=</span> <span class="kc">True</span><span class="p">):</span>
+    <span class="n">unique_apps</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="n">duplicate_apps</span> <span class="o">=</span> <span class="p">[]</span>
+    
+    <span class="n">start</span> <span class="o">=</span> <span class="mi">1</span> <span class="k">if</span> <span class="n">header</span> <span class="k">else</span> <span class="mi">0</span>
+    
+    <span class="k">for</span> <span class="n">app</span> <span class="ow">in</span> <span class="n">dataset</span><span class="p">[</span><span class="n">start</span><span class="p">:]:</span>
+        <span class="n">app_name</span> <span class="o">=</span> <span class="n">app</span><span class="p">[</span><span class="n">appname_index</span><span class="p">]</span>
+        
+        <span class="k">if</span> <span class="n">app_name</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">unique_apps</span><span class="p">:</span>
+            <span class="n">unique_apps</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">app_name</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">duplicate_apps</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">app</span><span class="p">)</span>
             
+    <span class="k">return</span> <span class="n">duplicate_apps</span>
+
+<span class="n">duplicates</span> <span class="o">=</span> <span class="n">check_duplicates</span><span class="p">(</span><span class="n">google_data</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">duplicates</span><span class="p">[:</span><span class="mi">5</span><span class="p">])</span>
+        
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>[[&#39;Quick PDF Scanner + OCR FREE&#39;, &#39;BUSINESS&#39;, &#39;4.2&#39;, &#39;80805&#39;, &#39;Varies with device&#39;, &#39;5,000,000+&#39;, &#39;Free&#39;, &#39;0&#39;, &#39;Everyone&#39;, &#39;Business&#39;, &#39;February 26, 2018&#39;, &#39;Varies with device&#39;, &#39;4.0.3 and up&#39;], [&#39;Box&#39;, &#39;BUSINESS&#39;, &#39;4.2&#39;, &#39;159872&#39;, &#39;Varies with device&#39;, &#39;10,000,000+&#39;, &#39;Free&#39;, &#39;0&#39;, &#39;Everyone&#39;, &#39;Business&#39;, &#39;July 31, 2018&#39;, &#39;Varies with device&#39;, &#39;Varies with device&#39;], [&#39;Google My Business&#39;, &#39;BUSINESS&#39;, &#39;4.4&#39;, &#39;70991&#39;, &#39;Varies with device&#39;, &#39;5,000,000+&#39;, &#39;Free&#39;, &#39;0&#39;, &#39;Everyone&#39;, &#39;Business&#39;, &#39;July 24, 2018&#39;, &#39;2.19.0.204537701&#39;, &#39;4.4 and up&#39;], [&#39;ZOOM Cloud Meetings&#39;, &#39;BUSINESS&#39;, &#39;4.4&#39;, &#39;31614&#39;, &#39;37M&#39;, &#39;10,000,000+&#39;, &#39;Free&#39;, &#39;0&#39;, &#39;Everyone&#39;, &#39;Business&#39;, &#39;July 20, 2018&#39;, &#39;4.1.28165.0716&#39;, &#39;4.0 and up&#39;], [&#39;join.me - Simple Meetings&#39;, &#39;BUSINESS&#39;, &#39;4.0&#39;, &#39;6989&#39;, &#39;Varies with device&#39;, &#39;1,000,000+&#39;, &#39;Free&#39;, &#39;0&#39;, &#39;Everyone&#39;, &#39;Business&#39;, &#39;July 16, 2018&#39;, &#39;4.3.0.508&#39;, &#39;4.4 and up&#39;]]
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Total number of duplicates: &#39;</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">duplicates</span><span class="p">))</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Total number of duplicates:  1181
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Now, it's time for decision making!! We need to keep at least one of the duplicates for each app and discard the others. Instead of deleting duplicate rows randomly, we need to choose a selection criterion for this purpose. Let's take a look at the duplicate rows for some apps and try to find out if there is any difference.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">some_duplicate_apps</span> <span class="o">=</span> <span class="n">duplicates</span><span class="p">[:</span><span class="mi">3</span><span class="p">]</span>
+<span class="n">sample_app_names</span> <span class="o">=</span> <span class="p">[]</span>
+
+<span class="k">for</span> <span class="n">apps</span> <span class="ow">in</span> <span class="n">some_duplicate_apps</span><span class="p">:</span>
+    <span class="n">app_name</span> <span class="o">=</span> <span class="n">apps</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+    <span class="n">sample_app_names</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">app_name</span><span class="p">)</span>
+    
+<span class="k">for</span> <span class="n">app</span> <span class="ow">in</span> <span class="n">google_data</span><span class="p">[</span><span class="mi">1</span><span class="p">:]:</span>
+    <span class="k">if</span> <span class="n">app</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="ow">in</span> <span class="n">sample_app_names</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">app</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>[&#39;Google My Business&#39;, &#39;BUSINESS&#39;, &#39;4.4&#39;, &#39;70991&#39;, &#39;Varies with device&#39;, &#39;5,000,000+&#39;, &#39;Free&#39;, &#39;0&#39;, &#39;Everyone&#39;, &#39;Business&#39;, &#39;July 24, 2018&#39;, &#39;2.19.0.204537701&#39;, &#39;4.4 and up&#39;]
+[&#39;Box&#39;, &#39;BUSINESS&#39;, &#39;4.2&#39;, &#39;159872&#39;, &#39;Varies with device&#39;, &#39;10,000,000+&#39;, &#39;Free&#39;, &#39;0&#39;, &#39;Everyone&#39;, &#39;Business&#39;, &#39;July 31, 2018&#39;, &#39;Varies with device&#39;, &#39;Varies with device&#39;]
+[&#39;Quick PDF Scanner + OCR FREE&#39;, &#39;BUSINESS&#39;, &#39;4.2&#39;, &#39;80805&#39;, &#39;Varies with device&#39;, &#39;5,000,000+&#39;, &#39;Free&#39;, &#39;0&#39;, &#39;Everyone&#39;, &#39;Business&#39;, &#39;February 26, 2018&#39;, &#39;Varies with device&#39;, &#39;4.0.3 and up&#39;]
+[&#39;Quick PDF Scanner + OCR FREE&#39;, &#39;BUSINESS&#39;, &#39;4.2&#39;, &#39;80805&#39;, &#39;Varies with device&#39;, &#39;5,000,000+&#39;, &#39;Free&#39;, &#39;0&#39;, &#39;Everyone&#39;, &#39;Business&#39;, &#39;February 26, 2018&#39;, &#39;Varies with device&#39;, &#39;4.0.3 and up&#39;]
+[&#39;Box&#39;, &#39;BUSINESS&#39;, &#39;4.2&#39;, &#39;159872&#39;, &#39;Varies with device&#39;, &#39;10,000,000+&#39;, &#39;Free&#39;, &#39;0&#39;, &#39;Everyone&#39;, &#39;Business&#39;, &#39;July 31, 2018&#39;, &#39;Varies with device&#39;, &#39;Varies with device&#39;]
+[&#39;Google My Business&#39;, &#39;BUSINESS&#39;, &#39;4.4&#39;, &#39;70991&#39;, &#39;Varies with device&#39;, &#39;5,000,000+&#39;, &#39;Free&#39;, &#39;0&#39;, &#39;Everyone&#39;, &#39;Business&#39;, &#39;July 24, 2018&#39;, &#39;2.19.0.204537701&#39;, &#39;4.4 and up&#39;]
+[&#39;Box&#39;, &#39;BUSINESS&#39;, &#39;4.2&#39;, &#39;159872&#39;, &#39;Varies with device&#39;, &#39;10,000,000+&#39;, &#39;Free&#39;, &#39;0&#39;, &#39;Everyone&#39;, &#39;Business&#39;, &#39;July 31, 2018&#39;, &#39;Varies with device&#39;, &#39;Varies with device&#39;]
+[&#39;Google My Business&#39;, &#39;BUSINESS&#39;, &#39;4.4&#39;, &#39;70991&#39;, &#39;Varies with device&#39;, &#39;5,000,000+&#39;, &#39;Free&#39;, &#39;0&#39;, &#39;Everyone&#39;, &#39;Business&#39;, &#39;July 24, 2018&#39;, &#39;2.19.0.204537701&#39;, &#39;4.4 and up&#39;]
+[&#39;Quick PDF Scanner + OCR FREE&#39;, &#39;BUSINESS&#39;, &#39;4.2&#39;, &#39;80804&#39;, &#39;Varies with device&#39;, &#39;5,000,000+&#39;, &#39;Free&#39;, &#39;0&#39;, &#39;Everyone&#39;, &#39;Business&#39;, &#39;February 26, 2018&#39;, &#39;Varies with device&#39;, &#39;4.0.3 and up&#39;]
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>If we notice the duplicate entries for 'Quick PDF Scanner' App, the main difference happen on the fourth position of each row, which corresponds to the number of views. The different numbers show the data was collected at different times. We can use this information to build a criterion for removing the duplicates. We won't remove rows randomly, but rather we'll keep the rows that have the highest number of reviews because the higher the number of reviews, the more reliable the ratings. 
+To do that, we will:</p>
+<ul>
+<li>Create a dictionary where each key is a unique app name, and the value is the highest number of reviews of that app</li>
+<li>Use the dictionary to create a new data set, which will have only one entry per app (and we only select the apps with the highest number of reviews)</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">reviews_max</span> <span class="o">=</span> <span class="p">{}</span>
+<span class="k">for</span> <span class="n">app</span> <span class="ow">in</span> <span class="n">google_data</span><span class="p">[</span><span class="mi">1</span><span class="p">:]:</span>
+    <span class="n">name</span> <span class="o">=</span> <span class="n">app</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+    <span class="n">n_reviews</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">app</span><span class="p">[</span><span class="mi">3</span><span class="p">])</span>
+    
+    <span class="k">if</span> <span class="n">name</span> <span class="ow">in</span> <span class="n">reviews_max</span> <span class="ow">and</span> <span class="n">n_reviews</span> <span class="o">&gt;</span> <span class="n">reviews_max</span><span class="p">[</span><span class="n">name</span><span class="p">]:</span>
+        <span class="n">reviews_max</span><span class="p">[</span><span class="n">name</span><span class="p">]</span> <span class="o">=</span> <span class="n">n_reviews</span>
+        
+    <span class="k">if</span> <span class="n">name</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">reviews_max</span><span class="p">:</span>
+        <span class="n">reviews_max</span><span class="p">[</span><span class="n">name</span><span class="p">]</span> <span class="o">=</span> <span class="n">n_reviews</span>
+        
+<span class="nb">print</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">reviews_max</span><span class="p">))</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>9659
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Now, let's use the reviews_max dictionary to remove the duplicates. For the duplicate cases, we'll only keep the entries with the highest number of reviews. In the code cell below:</p>
+<ul>
+<li>We start by initializing two empty lists, android_clean and already_added.</li>
+<li>We loop through the android data set, and for every iteration:<ul>
+<li>We isolate the name of the app and the number of reviews.</li>
+<li>We add the current row (app) to the android_clean list, and the app name (name) to the already_added list if:<ul>
+<li>The number of reviews of the current app matches the number of reviews of that app as described in the reviews_max dictionary; and</li>
+<li>The name of the app is not already in the already_added list. We need to add this supplementary condition to account for those cases where the highest number of reviews of a duplicate app is the same for more than one entry (for example, the Box app has three entries, and the number of reviews is the same). If we just check for reviews_max[name] == n_reviews, we'll still end up with duplicate entries for some apps.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[11]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># The cleaned android dataset doesn&#39;t contain any header</span>
+<span class="n">android_clean</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="n">already_added</span> <span class="o">=</span> <span class="p">[]</span>
+
+<span class="k">for</span> <span class="n">app</span> <span class="ow">in</span> <span class="n">google_data</span><span class="p">[</span><span class="mi">1</span><span class="p">:]:</span>
+    <span class="n">name</span> <span class="o">=</span> <span class="n">app</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+    <span class="n">n_reviews</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">app</span><span class="p">[</span><span class="mi">3</span><span class="p">])</span>
+    
+    <span class="k">if</span> <span class="n">n_reviews</span> <span class="o">==</span> <span class="n">reviews_max</span><span class="p">[</span><span class="n">name</span><span class="p">]</span> <span class="ow">and</span> <span class="n">name</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">already_added</span><span class="p">:</span>
+        <span class="n">android_clean</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">app</span><span class="p">)</span>
+        <span class="n">already_added</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">name</span><span class="p">)</span>
+        
+<span class="nb">print</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">android_clean</span><span class="p">))</span>
+        
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>9659
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Now let's check if there is any wrong data in App Store dataset. After reading the discussion section in this <a href="https://www.kaggle.com/ramamet4/app-store-apple-data-set-10k-apps/discussion">link</a>, we didn't notice any issue with missing data. However, to make sure, we check if the length of each row in the App Store dataset is the same. If the length of a row is different, it is probably missing some data. If such a row is found, we will remove them from the dataset.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">check_rows_with_missing_data</span><span class="p">(</span><span class="n">dataset</span><span class="p">,</span> <span class="n">header_length</span><span class="p">,</span> <span class="n">header</span> <span class="o">=</span> <span class="kc">True</span><span class="p">):</span>
+    <span class="n">start</span> <span class="o">=</span> <span class="mi">1</span> <span class="k">if</span> <span class="n">header</span> <span class="k">else</span> <span class="mi">0</span>
+    <span class="n">index</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="n">row_index_with_missing_data</span> <span class="o">=</span> <span class="p">[]</span>
+    
+    <span class="k">for</span> <span class="n">app</span> <span class="ow">in</span> <span class="n">dataset</span><span class="p">[</span><span class="n">start</span><span class="p">:]:</span>
+        <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">app</span><span class="p">)</span> <span class="o">&lt;</span> <span class="n">header_length</span><span class="p">:</span>
+            <span class="n">row_index_with_missing_data</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">index</span><span class="p">)</span>
+        <span class="n">index</span> <span class="o">+=</span> <span class="mi">1</span>
+            
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Total number of rows with incorrect data: &quot;</span><span class="p">,</span> \
+          <span class="nb">len</span><span class="p">(</span><span class="n">row_index_with_missing_data</span><span class="p">))</span>
+    
+    <span class="k">return</span> <span class="n">row_index_with_missing_data</span>
+
+<span class="n">incorrect_rows</span> <span class="o">=</span> <span class="n">check_rows_with_missing_data</span><span class="p">(</span><span class="n">apple_data</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">apple_data</span><span class="p">[</span><span class="mi">0</span><span class="p">]))</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Total number of rows with incorrect data:  0
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>So, there is no rows in the App store dataset that is missing data. Now, we will check for duplicate rows.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[13]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">apple_data</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>[&#39;id&#39;, &#39;track_name&#39;, &#39;size_bytes&#39;, &#39;currency&#39;, &#39;price&#39;, &#39;rating_count_tot&#39;, &#39;rating_count_ver&#39;, &#39;user_rating&#39;, &#39;user_rating_ver&#39;, &#39;ver&#39;, &#39;cont_rating&#39;, &#39;prime_genre&#39;, &#39;sup_devices.num&#39;, &#39;ipadSc_urls.num&#39;, &#39;lang.num&#39;, &#39;vpp_lic&#39;]
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[14]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">appname_index</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">duplicate_appstore_app</span> <span class="o">=</span> <span class="n">check_duplicates</span><span class="p">(</span><span class="n">apple_data</span><span class="p">,</span> <span class="n">appname_index</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Total number of dupicate apps: &quot;</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">duplicate_appstore_app</span><span class="p">))</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Total number of dupicate apps:  0
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>So, we don't need to do extra work for removing the duplicate data in App Store dataset. However, if we remember correctly, the target audiences for our apps are native english speaker. Therefore, we only want to analyze those apps that are directed toward English-speaking audience. If we explore the data long enough, we'll find that both data sets have apps with names that suggest they are not directed toward an English-speaking audience. We're not interested in keeping these apps, so we'll remove them. One way to go about this is to remove each app with a name containing a symbol that is not commonly used in English text.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>The numbers corresponding to the characters we commonly use in an English text are all in the range 0 to 127, according to the ASCII (American Standard Code for Information Interchange) system. Based on this number range, we can build a function that detects whether a character belongs to the set of common English characters or not. If the number is equal to or less than 127, then the character belongs to the set of common English characters.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[15]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="sd">&#39;&#39;&#39; Checks if there&#39;s any character in the app name that doesn&#39;t belong to </span>
+<span class="sd">the set of common English characters. If less than three nonenglish character </span>
+<span class="sd">are found, returns True; otherwise, returns false. </span>
+<span class="sd">&#39;&#39;&#39;</span>
+<span class="k">def</span> <span class="nf">is_english_name</span><span class="p">(</span><span class="n">app_name</span><span class="p">):</span>
+    <span class="n">number_nonenglish_char</span> <span class="o">=</span> <span class="mi">0</span>
+    
+    <span class="k">for</span> <span class="n">char</span> <span class="ow">in</span> <span class="n">app_name</span><span class="p">:</span>
+        <span class="k">if</span> <span class="nb">ord</span><span class="p">(</span><span class="n">char</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">127</span><span class="p">:</span>
+            <span class="n">number_nonenglish_char</span> <span class="o">+=</span> <span class="mi">1</span>
+            
+    <span class="k">return</span> <span class="kc">True</span> <span class="k">if</span> <span class="n">number_nonenglish_char</span> <span class="o">&lt;=</span> <span class="mi">3</span> <span class="k">else</span> <span class="kc">False</span>
+
+<span class="c1"># Test is_english_name() function</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">is_english_name</span><span class="p">(</span><span class="s2">&quot;Instragram&quot;</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">is_english_name</span><span class="p">(</span><span class="s1">&#39;爱奇艺PPS -《欢乐颂2》电视剧热播&#39;</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">is_english_name</span><span class="p">(</span><span class="s1">&#39;Docs To Go™ Free Office Suite&#39;</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">is_english_name</span><span class="p">(</span><span class="s1">&#39;Instachat 😜&#39;</span><span class="p">))</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>True
+False
+True
+True
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Now let's use the <code>is_english_name()</code> function to filter out non-english apps from both data sets.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[16]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">english_android_apps</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="k">for</span> <span class="n">app</span> <span class="ow">in</span> <span class="n">android_clean</span><span class="p">:</span>
+    <span class="n">app_name</span> <span class="o">=</span> <span class="n">app</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+    <span class="k">if</span> <span class="n">is_english_name</span><span class="p">(</span><span class="n">app_name</span><span class="p">):</span>
+        <span class="n">english_android_apps</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">app</span><span class="p">)</span>
+        
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Total english apps in Google play store: &quot;</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">english_android_apps</span><span class="p">))</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Total english apps in Google play store:  9614
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[17]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">english_ios_apps</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="k">for</span> <span class="n">app</span> <span class="ow">in</span> <span class="n">apple_data</span><span class="p">[</span><span class="mi">1</span><span class="p">:]:</span>
+    <span class="n">app_name</span> <span class="o">=</span> <span class="n">app</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+    <span class="k">if</span> <span class="n">is_english_name</span><span class="p">(</span><span class="n">app_name</span><span class="p">):</span>
+        <span class="n">english_ios_apps</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">app</span><span class="p">)</span>
+        
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Total english apps in Apple store: &quot;</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">english_ios_apps</span><span class="p">))</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Total english apps in Apple store:  6183
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>As we have already mentioned, we only build apps that are free to download and install, and our main source of revenue consists of in-app ads. Our data sets contain both free and non-free apps; we'll need to isolate only the free apps for our analysis.Isolating the free apps will be our last step in the data cleaning process.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[18]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Some samples of Google Playstore Dataset:</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">google_data</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="n">explore_data</span><span class="p">(</span><span class="n">english_android_apps</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The columns of Apple store Dataset:</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">apple_data</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="n">explore_data</span><span class="p">(</span><span class="n">english_ios_apps</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Some samples of Google Playstore Dataset:
+
+[&#39;App&#39;, &#39;Category&#39;, &#39;Rating&#39;, &#39;Reviews&#39;, &#39;Size&#39;, &#39;Installs&#39;, &#39;Type&#39;, &#39;Price&#39;, &#39;Content Rating&#39;, &#39;Genres&#39;, &#39;Last Updated&#39;, &#39;Current Ver&#39;, &#39;Android Ver&#39;]
+
+
+[&#39;Photo Editor &amp; Candy Camera &amp; Grid &amp; ScrapBook&#39;, &#39;ART_AND_DESIGN&#39;, &#39;4.1&#39;, &#39;159&#39;, &#39;19M&#39;, &#39;10,000+&#39;, &#39;Free&#39;, &#39;0&#39;, &#39;Everyone&#39;, &#39;Art &amp; Design&#39;, &#39;January 7, 2018&#39;, &#39;1.0.0&#39;, &#39;4.0.3 and up&#39;]
+
+
+[&#39;U Launcher Lite – FREE Live Cool Themes, Hide Apps&#39;, &#39;ART_AND_DESIGN&#39;, &#39;4.7&#39;, &#39;87510&#39;, &#39;8.7M&#39;, &#39;5,000,000+&#39;, &#39;Free&#39;, &#39;0&#39;, &#39;Everyone&#39;, &#39;Art &amp; Design&#39;, &#39;August 1, 2018&#39;, &#39;1.2.4&#39;, &#39;4.0.3 and up&#39;]
+
+
+[&#39;Sketch - Draw &amp; Paint&#39;, &#39;ART_AND_DESIGN&#39;, &#39;4.5&#39;, &#39;215644&#39;, &#39;25M&#39;, &#39;50,000,000+&#39;, &#39;Free&#39;, &#39;0&#39;, &#39;Teen&#39;, &#39;Art &amp; Design&#39;, &#39;June 8, 2018&#39;, &#39;Varies with device&#39;, &#39;4.2 and up&#39;]
+
+
+
+
+The columns of Apple store Dataset:
+
+[&#39;id&#39;, &#39;track_name&#39;, &#39;size_bytes&#39;, &#39;currency&#39;, &#39;price&#39;, &#39;rating_count_tot&#39;, &#39;rating_count_ver&#39;, &#39;user_rating&#39;, &#39;user_rating_ver&#39;, &#39;ver&#39;, &#39;cont_rating&#39;, &#39;prime_genre&#39;, &#39;sup_devices.num&#39;, &#39;ipadSc_urls.num&#39;, &#39;lang.num&#39;, &#39;vpp_lic&#39;]
+
+
+[&#39;284882215&#39;, &#39;Facebook&#39;, &#39;389879808&#39;, &#39;USD&#39;, &#39;0.0&#39;, &#39;2974676&#39;, &#39;212&#39;, &#39;3.5&#39;, &#39;3.5&#39;, &#39;95.0&#39;, &#39;4+&#39;, &#39;Social Networking&#39;, &#39;37&#39;, &#39;1&#39;, &#39;29&#39;, &#39;1&#39;]
+
+
+[&#39;389801252&#39;, &#39;Instagram&#39;, &#39;113954816&#39;, &#39;USD&#39;, &#39;0.0&#39;, &#39;2161558&#39;, &#39;1289&#39;, &#39;4.5&#39;, &#39;4.0&#39;, &#39;10.23&#39;, &#39;12+&#39;, &#39;Photo &amp; Video&#39;, &#39;37&#39;, &#39;0&#39;, &#39;29&#39;, &#39;1&#39;]
+
+
+[&#39;529479190&#39;, &#39;Clash of Clans&#39;, &#39;116476928&#39;, &#39;USD&#39;, &#39;0.0&#39;, &#39;2130805&#39;, &#39;579&#39;, &#39;4.5&#39;, &#39;4.5&#39;, &#39;9.24.12&#39;, &#39;9+&#39;, &#39;Games&#39;, &#39;38&#39;, &#39;5&#39;, &#39;18&#39;, &#39;1&#39;]
+
+
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[19]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">free_android_english</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="n">free_ios_english</span> <span class="o">=</span> <span class="p">[]</span>
+
+<span class="k">for</span> <span class="n">app</span> <span class="ow">in</span> <span class="n">english_android_apps</span><span class="p">:</span>
+    <span class="n">price</span> <span class="o">=</span> <span class="n">app</span><span class="p">[</span><span class="mi">7</span><span class="p">]</span>
+    <span class="k">if</span> <span class="n">price</span> <span class="o">==</span> <span class="s1">&#39;0&#39;</span><span class="p">:</span>
+        <span class="n">free_android_english</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">app</span><span class="p">)</span>
+        
+<span class="k">for</span> <span class="n">app</span> <span class="ow">in</span> <span class="n">english_ios_apps</span><span class="p">:</span>
+    <span class="n">price</span> <span class="o">=</span> <span class="n">app</span><span class="p">[</span><span class="mi">4</span><span class="p">]</span>
+    <span class="k">if</span> <span class="n">price</span> <span class="o">==</span> <span class="s1">&#39;0.0&#39;</span><span class="p">:</span>
+        <span class="n">free_ios_english</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">app</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The number of free english apps in Google Playstore: &quot;</span><span class="p">,</span> \
+      <span class="nb">len</span><span class="p">(</span><span class="n">free_android_english</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The number of free ios apps in Apple Playstore: &quot;</span><span class="p">,</span> \
+      <span class="nb">len</span><span class="p">(</span><span class="n">free_ios_english</span><span class="p">))</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>The number of free english apps in Google Playstore:  8864
+The number of free ios apps in Apple Playstore:  3222
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Now, we have successfully cleaned the data. Now it's time to do some real job! Our aim is to determine the kinds of apps that are likely to attract more users because our revenue is highly influenced by the number of people using our apps. Because our end goal is to add the app on both Google Play and the App Store, we need to find app profiles that are successful on both markets. Let's begin the analysis by getting a sense of what are the most common genres for each market. For this, we'll need to build frequency tables for a few columns in our data sets. At first, let's try to find out what the most common genres in each market are.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[20]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">freq_table</span><span class="p">(</span><span class="n">dataset</span><span class="p">,</span> <span class="n">index</span><span class="p">):</span>
+    <span class="sd">&#39;&#39;&#39; The function returns a frequeny table as a dictionary for the column</span>
+<span class="sd">    specified by @parameter index. It assumes that the dataset has no header</span>
+<span class="sd">    row.</span>
+<span class="sd">    &#39;&#39;&#39;</span>
+    <span class="n">freq_dict</span> <span class="o">=</span> <span class="p">{}</span>
+    <span class="n">freq_as_percentage</span> <span class="o">=</span> <span class="p">{}</span>
+    <span class="n">total_app</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">dataset</span><span class="p">)</span>
+    
+    <span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">dataset</span><span class="p">:</span>
+        <span class="n">key</span> <span class="o">=</span> <span class="n">row</span><span class="p">[</span><span class="n">index</span><span class="p">]</span>
+        
+        <span class="k">if</span> <span class="n">key</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">freq_dict</span><span class="p">:</span>
+            <span class="n">freq_dict</span><span class="p">[</span><span class="n">key</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">freq_dict</span><span class="p">[</span><span class="n">key</span><span class="p">]</span> <span class="o">+=</span> <span class="mi">1</span>
+            
+    <span class="k">for</span> <span class="n">key</span><span class="p">,</span> <span class="n">val</span> <span class="ow">in</span> <span class="n">freq_dict</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+        <span class="n">freq_as_percentage</span><span class="p">[</span><span class="n">key</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="n">val</span> <span class="o">/</span> <span class="n">total_app</span><span class="p">)</span> <span class="o">*</span> <span class="mi">100</span>
+        
+    <span class="k">return</span> <span class="n">freq_dict</span><span class="p">,</span> <span class="n">freq_as_percentage</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[21]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">display_table</span><span class="p">(</span><span class="n">dataset</span><span class="p">,</span> <span class="n">index</span><span class="p">):</span>
+    <span class="n">table</span> <span class="o">=</span> <span class="n">freq_table</span><span class="p">(</span><span class="n">dataset</span><span class="p">,</span> <span class="n">index</span><span class="p">)[</span><span class="mi">1</span><span class="p">]</span>
+    <span class="n">table_display</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">for</span> <span class="n">key</span> <span class="ow">in</span> <span class="n">table</span><span class="p">:</span>
+        <span class="n">key_val_as_tuple</span> <span class="o">=</span> <span class="p">(</span><span class="n">table</span><span class="p">[</span><span class="n">key</span><span class="p">],</span> <span class="n">key</span><span class="p">)</span>
+        <span class="n">table_display</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">key_val_as_tuple</span><span class="p">)</span>
+
+    <span class="n">table_sorted</span> <span class="o">=</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">table_display</span><span class="p">,</span> <span class="n">reverse</span> <span class="o">=</span> <span class="kc">True</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">entry</span> <span class="ow">in</span> <span class="n">table_sorted</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">{0}</span><span class="s2"> : </span><span class="si">{1:.2f}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">entry</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">entry</span><span class="p">[</span><span class="mi">0</span><span class="p">]))</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[22]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">display_table</span><span class="p">(</span><span class="n">free_ios_english</span><span class="p">,</span> <span class="mi">11</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Games : 58.16
+Entertainment : 7.88
+Photo &amp; Video : 4.97
+Education : 3.66
+Social Networking : 3.29
+Shopping : 2.61
+Utilities : 2.51
+Sports : 2.14
+Music : 2.05
+Health &amp; Fitness : 2.02
+Productivity : 1.74
+Lifestyle : 1.58
+News : 1.33
+Travel : 1.24
+Finance : 1.12
+Weather : 0.87
+Food &amp; Drink : 0.81
+Reference : 0.56
+Business : 0.53
+Book : 0.43
+Navigation : 0.19
+Medical : 0.19
+Catalogs : 0.12
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>We can see that among the free English apps, more than a half (58.16%) are games. Entertainment apps are close to 8%, followed by photo and video apps, which are close to 5%. Only 3.66% of the apps are designed for education, followed by social networking apps which amount for 3.29% of the apps in our data set.</p>
+<p>The general impression is that App Store (at least the part containing free English apps) is dominated by apps that are designed for fun (games, entertainment, photo and video, social networking, sports, music, etc.), while apps with practical purposes (education, shopping, utilities, productivity, lifestyle, etc.) are more rare. However, the fact that fun apps are the most numerous doesn't also imply that they also have the greatest number of users — the demand might not be the same as the offer.</p>
+<p>Let's continue by examining the Genres and Category columns of the Google Play data set (two columns which seem to be related).</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[23]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">display_table</span><span class="p">(</span><span class="n">free_android_english</span><span class="p">,</span> <span class="mi">9</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Tools : 8.45
+Entertainment : 6.07
+Education : 5.35
+Business : 4.59
+Productivity : 3.89
+Lifestyle : 3.89
+Finance : 3.70
+Medical : 3.53
+Sports : 3.46
+Personalization : 3.32
+Communication : 3.24
+Action : 3.10
+Health &amp; Fitness : 3.08
+Photography : 2.94
+News &amp; Magazines : 2.80
+Social : 2.66
+Travel &amp; Local : 2.32
+Shopping : 2.25
+Books &amp; Reference : 2.14
+Simulation : 2.04
+Dating : 1.86
+Arcade : 1.85
+Video Players &amp; Editors : 1.77
+Casual : 1.76
+Maps &amp; Navigation : 1.40
+Food &amp; Drink : 1.24
+Puzzle : 1.13
+Racing : 0.99
+Role Playing : 0.94
+Libraries &amp; Demo : 0.94
+Auto &amp; Vehicles : 0.93
+Strategy : 0.91
+House &amp; Home : 0.82
+Weather : 0.80
+Events : 0.71
+Adventure : 0.68
+Comics : 0.61
+Beauty : 0.60
+Art &amp; Design : 0.60
+Parenting : 0.50
+Card : 0.45
+Casino : 0.43
+Trivia : 0.42
+Educational;Education : 0.39
+Board : 0.38
+Educational : 0.37
+Education;Education : 0.34
+Word : 0.26
+Casual;Pretend Play : 0.24
+Music : 0.20
+Racing;Action &amp; Adventure : 0.17
+Puzzle;Brain Games : 0.17
+Entertainment;Music &amp; Video : 0.17
+Casual;Brain Games : 0.14
+Casual;Action &amp; Adventure : 0.14
+Arcade;Action &amp; Adventure : 0.12
+Action;Action &amp; Adventure : 0.10
+Educational;Pretend Play : 0.09
+Simulation;Action &amp; Adventure : 0.08
+Parenting;Education : 0.08
+Entertainment;Brain Games : 0.08
+Board;Brain Games : 0.08
+Parenting;Music &amp; Video : 0.07
+Educational;Brain Games : 0.07
+Casual;Creativity : 0.07
+Art &amp; Design;Creativity : 0.07
+Education;Pretend Play : 0.06
+Role Playing;Pretend Play : 0.05
+Education;Creativity : 0.05
+Role Playing;Action &amp; Adventure : 0.03
+Puzzle;Action &amp; Adventure : 0.03
+Entertainment;Creativity : 0.03
+Entertainment;Action &amp; Adventure : 0.03
+Educational;Creativity : 0.03
+Educational;Action &amp; Adventure : 0.03
+Education;Music &amp; Video : 0.03
+Education;Brain Games : 0.03
+Education;Action &amp; Adventure : 0.03
+Adventure;Action &amp; Adventure : 0.03
+Video Players &amp; Editors;Music &amp; Video : 0.02
+Sports;Action &amp; Adventure : 0.02
+Simulation;Pretend Play : 0.02
+Puzzle;Creativity : 0.02
+Music;Music &amp; Video : 0.02
+Entertainment;Pretend Play : 0.02
+Casual;Education : 0.02
+Board;Action &amp; Adventure : 0.02
+Video Players &amp; Editors;Creativity : 0.01
+Trivia;Education : 0.01
+Travel &amp; Local;Action &amp; Adventure : 0.01
+Tools;Education : 0.01
+Strategy;Education : 0.01
+Strategy;Creativity : 0.01
+Strategy;Action &amp; Adventure : 0.01
+Simulation;Education : 0.01
+Role Playing;Brain Games : 0.01
+Racing;Pretend Play : 0.01
+Puzzle;Education : 0.01
+Parenting;Brain Games : 0.01
+Music &amp; Audio;Music &amp; Video : 0.01
+Lifestyle;Pretend Play : 0.01
+Lifestyle;Education : 0.01
+Health &amp; Fitness;Education : 0.01
+Health &amp; Fitness;Action &amp; Adventure : 0.01
+Entertainment;Education : 0.01
+Communication;Creativity : 0.01
+Comics;Creativity : 0.01
+Casual;Music &amp; Video : 0.01
+Card;Action &amp; Adventure : 0.01
+Books &amp; Reference;Education : 0.01
+Art &amp; Design;Pretend Play : 0.01
+Art &amp; Design;Action &amp; Adventure : 0.01
+Arcade;Pretend Play : 0.01
+Adventure;Education : 0.01
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>The landscape seems significantly different on Google Play: there are not that many apps designed for fun, and it seems that a good number of apps are designed for practical purposes (family, tools, business, lifestyle, productivity, etc.). However, if we investigate this further, we can see that the family category (which accounts for almost 19% of the apps) means mostly games for kids. Even so, practical apps seem to have a better representation on Google Play compared to App Store. This picture is also confirmed by the frequency table we see for the Genres column:</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[24]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">display_table</span><span class="p">(</span><span class="n">free_android_english</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>FAMILY : 18.91
+GAME : 9.72
+TOOLS : 8.46
+BUSINESS : 4.59
+LIFESTYLE : 3.90
+PRODUCTIVITY : 3.89
+FINANCE : 3.70
+MEDICAL : 3.53
+SPORTS : 3.40
+PERSONALIZATION : 3.32
+COMMUNICATION : 3.24
+HEALTH_AND_FITNESS : 3.08
+PHOTOGRAPHY : 2.94
+NEWS_AND_MAGAZINES : 2.80
+SOCIAL : 2.66
+TRAVEL_AND_LOCAL : 2.34
+SHOPPING : 2.25
+BOOKS_AND_REFERENCE : 2.14
+DATING : 1.86
+VIDEO_PLAYERS : 1.79
+MAPS_AND_NAVIGATION : 1.40
+FOOD_AND_DRINK : 1.24
+EDUCATION : 1.16
+ENTERTAINMENT : 0.96
+LIBRARIES_AND_DEMO : 0.94
+AUTO_AND_VEHICLES : 0.93
+HOUSE_AND_HOME : 0.82
+WEATHER : 0.80
+EVENTS : 0.71
+PARENTING : 0.65
+ART_AND_DESIGN : 0.64
+COMICS : 0.62
+BEAUTY : 0.60
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>The difference between the Genres and the Category columns is not crystal clear, but one thing we can notice is that the Genres column is much more granular (it has more categories). We're only looking for the bigger picture at the moment, so we'll only work with the Category column moving forward.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Up to this point, we found that the App Store is dominated by apps designed for fun, while Google Play shows a more balanced landscape of both practical and for-fun apps. Now we'd like to get an idea about the kind of apps that have most users.</p>
+<p>One way to find out what genres are the most popular (have the most users) is to calculate the average number of installs for each app genre. For the Google Play data set, we can find this information in the Installs column, but for the App Store data set this information is missing. As a workaround, we'll take the total number of user ratings as a proxy, which we can find in the rating_count_tot app.</p>
+<p>Below, we calculate the average number of user ratings per app genre on the App Store:</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[25]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">genre_freq_table</span> <span class="o">=</span> <span class="n">freq_table</span><span class="p">(</span><span class="n">free_ios_english</span><span class="p">,</span> <span class="mi">11</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">genre_freq_table</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>{&#39;Social Networking&#39;: 106, &#39;Photo &amp; Video&#39;: 160, &#39;Games&#39;: 1874, &#39;Music&#39;: 66, &#39;Reference&#39;: 18, &#39;Health &amp; Fitness&#39;: 65, &#39;Weather&#39;: 28, &#39;Utilities&#39;: 81, &#39;Travel&#39;: 40, &#39;Shopping&#39;: 84, &#39;News&#39;: 43, &#39;Navigation&#39;: 6, &#39;Lifestyle&#39;: 51, &#39;Entertainment&#39;: 254, &#39;Food &amp; Drink&#39;: 26, &#39;Sports&#39;: 69, &#39;Book&#39;: 14, &#39;Finance&#39;: 36, &#39;Education&#39;: 118, &#39;Productivity&#39;: 56, &#39;Business&#39;: 17, &#39;Catalogs&#39;: 4, &#39;Medical&#39;: 6}
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[26]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">map_genre_rating</span> <span class="o">=</span> <span class="p">{}</span>
+<span class="k">for</span> <span class="n">app</span> <span class="ow">in</span> <span class="n">free_ios_english</span><span class="p">:</span>
+    <span class="n">genre</span> <span class="o">=</span> <span class="n">app</span><span class="p">[</span><span class="mi">11</span><span class="p">]</span>
+    <span class="n">user_rating</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">app</span><span class="p">[</span><span class="mi">5</span><span class="p">])</span>
+    
+    <span class="k">if</span> <span class="n">genre</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">map_genre_rating</span><span class="p">:</span>
+        <span class="n">map_genre_rating</span><span class="p">[</span><span class="n">genre</span><span class="p">]</span> <span class="o">=</span> <span class="n">user_rating</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">map_genre_rating</span><span class="p">[</span><span class="n">genre</span><span class="p">]</span> <span class="o">+=</span> <span class="n">user_rating</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[27]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">most_popular_genre</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="k">for</span> <span class="n">genre</span><span class="p">,</span> <span class="n">number</span> <span class="ow">in</span> <span class="n">genre_freq_table</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+    <span class="n">total</span> <span class="o">=</span> <span class="n">map_genre_rating</span><span class="p">[</span><span class="n">genre</span><span class="p">]</span>
+    <span class="n">average_rating_per_genre</span> <span class="o">=</span> <span class="n">total</span> <span class="o">/</span> <span class="n">number</span>
+    <span class="n">most_popular_genre</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="n">genre</span><span class="p">,</span> <span class="n">average_rating_per_genre</span><span class="p">))</span>
+    
+<span class="n">sorted_popular_genre</span> <span class="o">=</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">most_popular_genre</span><span class="p">,</span> <span class="n">key</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">elem</span><span class="p">:</span> <span class="n">elem</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span>
+                             <span class="n">reverse</span> <span class="o">=</span> <span class="kc">True</span><span class="p">)</span>
+
+<span class="k">for</span> <span class="n">elem</span> <span class="ow">in</span> <span class="n">sorted_popular_genre</span><span class="p">:</span>
+    <span class="n">genre_name</span> <span class="o">=</span> <span class="n">elem</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+    <span class="n">average_ratng</span> <span class="o">=</span> <span class="n">elem</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;</span><span class="si">{}</span><span class="s1">:</span><span class="si">{:.2f}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">genre_name</span><span class="p">,</span> <span class="n">average_ratng</span><span class="p">))</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Navigation:86090.33
+Reference:74942.11
+Social Networking:71548.35
+Music:57326.53
+Weather:52279.89
+Book:39758.50
+Food &amp; Drink:33333.92
+Finance:31467.94
+Photo &amp; Video:28441.54
+Travel:28243.80
+Shopping:26919.69
+Health &amp; Fitness:23298.02
+Sports:23008.90
+Games:22788.67
+News:21248.02
+Productivity:21028.41
+Utilities:18684.46
+Lifestyle:16485.76
+Entertainment:14029.83
+Business:7491.12
+Education:7003.98
+Catalogs:4004.00
+Medical:612.00
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>On average, navigation apps have the highest number of user reviews, but this figure is heavily influenced by Waze and Google Maps, which have close to half a million user reviews together:</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[28]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">app</span> <span class="ow">in</span> <span class="n">free_ios_english</span><span class="p">:</span>
+    <span class="k">if</span> <span class="n">app</span><span class="p">[</span><span class="o">-</span><span class="mi">5</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;Navigation&#39;</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">app</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="s1">&#39;:&#39;</span><span class="p">,</span> <span class="n">app</span><span class="p">[</span><span class="mi">5</span><span class="p">])</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Waze - GPS Navigation, Maps &amp; Real-time Traffic : 345046
+Google Maps - Navigation &amp; Transit : 154911
+Geocaching® : 12811
+CoPilot GPS – Car Navigation &amp; Offline Maps : 3582
+ImmobilienScout24: Real Estate Search in Germany : 187
+Railway Route Search : 5
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>The same pattern applies to social networking apps, where the average number is heavily influenced by a few giants like Facebook, Pinterest, Skype, etc. Same applies to music apps, where a few big players like Pandora, Spotify, and Shazam heavily influence the average number.</p>
+<p>Our aim is to find popular genres, but navigation, social networking or music apps might seem more popular than they really are. The average number of ratings seem to be skewed by very few apps which have hundreds of thousands of user ratings, while the other apps may struggle to get past the 10,000 threshold</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Reference apps have 74,942 user ratings on average, but it's actually the Bible and Dictionary.com which skew up the average rating:</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[29]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">app</span> <span class="ow">in</span> <span class="n">free_ios_english</span><span class="p">:</span>
+    <span class="k">if</span> <span class="n">app</span><span class="p">[</span><span class="o">-</span><span class="mi">5</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;Reference&#39;</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">app</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="s1">&#39;:&#39;</span><span class="p">,</span> <span class="n">app</span><span class="p">[</span><span class="mi">5</span><span class="p">])</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Bible : 985920
+Dictionary.com Dictionary &amp; Thesaurus : 200047
+Dictionary.com Dictionary &amp; Thesaurus for iPad : 54175
+Google Translate : 26786
+Muslim Pro: Ramadan 2017 Prayer Times, Azan, Quran : 18418
+New Furniture Mods - Pocket Wiki &amp; Game Tools for Minecraft PC Edition : 17588
+Merriam-Webster Dictionary : 16849
+Night Sky : 12122
+City Maps for Minecraft PE - The Best Maps for Minecraft Pocket Edition (MCPE) : 8535
+LUCKY BLOCK MOD ™ for Minecraft PC Edition - The Best Pocket Wiki &amp; Mods Installer Tools : 4693
+GUNS MODS for Minecraft PC Edition - Mods Tools : 1497
+Guides for Pokémon GO - Pokemon GO News and Cheats : 826
+WWDC : 762
+Horror Maps for Minecraft PE - Download The Scariest Maps for Minecraft Pocket Edition (MCPE) Free : 718
+VPN Express : 14
+Real Bike Traffic Rider Virtual Reality Glasses : 8
+教えて!goo : 0
+Jishokun-Japanese English Dictionary &amp; Translator : 0
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>However, this niche seems to show some potential. One thing we could do is take another popular book and turn it into an app where we could add different features besides the raw version of the book. This might include daily quotes from the book, an audio version of the book, quizzes about the book, etc. On top of that, we could also embed a dictionary within the app, so users don't need to exit our app to look up words in an external app.</p>
+<p>This idea seems to fit well with the fact that the App Store is dominated by for-fun apps. This suggests the market might be a bit saturated with for-fun apps, which means a practical app might have more of a chance to stand out among the huge number of apps on the App Store.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Now let's analyze the Google Play market a bit. For the Google Play market, we actually have data about the number of installs, so we should be able to get a clearer picture about genre popularity. However, the install numbers don't seem precise enough — we can see that most values are open-ended (100+, 1,000+, 5,000+, etc.):</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[30]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">display_table</span><span class="p">(</span><span class="n">free_android_english</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>1,000,000+ : 15.73
+100,000+ : 11.55
+10,000,000+ : 10.55
+10,000+ : 10.20
+1,000+ : 8.39
+100+ : 6.92
+5,000,000+ : 6.83
+500,000+ : 5.56
+50,000+ : 4.77
+5,000+ : 4.51
+10+ : 3.54
+500+ : 3.25
+50,000,000+ : 2.30
+100,000,000+ : 2.13
+50+ : 1.92
+5+ : 0.79
+1+ : 0.51
+500,000,000+ : 0.27
+1,000,000,000+ : 0.23
+0+ : 0.05
+0 : 0.01
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>One problem with this data is that is not precise. For instance, we don't know whether an app with 100,000+ installs has 100,000 installs, 200,000, or 350,000. However, we don't need very precise data for our purposes — we only want to get an idea which app genres attract the most users, and we don't need perfect precision with respect to the number of users.</p>
+<p>We're going to leave the numbers as they are, which means that we'll consider that an app with 100,000+ installs has 100,000 installs, and an app with 1,000,000+ installs has 1,000,000 installs, and so on.</p>
+<p>To perform computations, however, we'll need to convert each install number to float — this means that we need to remove the commas and the plus characters, otherwise the conversion will fail and raise an error. We'll do this directly in the loop below, where we also compute the average number of installs for each genre (category).</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[31]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">category_freq_table</span> <span class="o">=</span> <span class="n">freq_table</span><span class="p">(</span><span class="n">free_android_english</span><span class="p">,</span> <span class="mi">1</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">category_freq_table</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>{&#39;ART_AND_DESIGN&#39;: 57, &#39;AUTO_AND_VEHICLES&#39;: 82, &#39;BEAUTY&#39;: 53, &#39;BOOKS_AND_REFERENCE&#39;: 190, &#39;BUSINESS&#39;: 407, &#39;COMICS&#39;: 55, &#39;COMMUNICATION&#39;: 287, &#39;DATING&#39;: 165, &#39;EDUCATION&#39;: 103, &#39;ENTERTAINMENT&#39;: 85, &#39;EVENTS&#39;: 63, &#39;FINANCE&#39;: 328, &#39;FOOD_AND_DRINK&#39;: 110, &#39;HEALTH_AND_FITNESS&#39;: 273, &#39;HOUSE_AND_HOME&#39;: 73, &#39;LIBRARIES_AND_DEMO&#39;: 83, &#39;LIFESTYLE&#39;: 346, &#39;GAME&#39;: 862, &#39;FAMILY&#39;: 1676, &#39;MEDICAL&#39;: 313, &#39;SOCIAL&#39;: 236, &#39;SHOPPING&#39;: 199, &#39;PHOTOGRAPHY&#39;: 261, &#39;SPORTS&#39;: 301, &#39;TRAVEL_AND_LOCAL&#39;: 207, &#39;TOOLS&#39;: 750, &#39;PERSONALIZATION&#39;: 294, &#39;PRODUCTIVITY&#39;: 345, &#39;PARENTING&#39;: 58, &#39;WEATHER&#39;: 71, &#39;VIDEO_PLAYERS&#39;: 159, &#39;NEWS_AND_MAGAZINES&#39;: 248, &#39;MAPS_AND_NAVIGATION&#39;: 124}
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[32]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">clean_convert_install</span><span class="p">(</span><span class="n">install</span><span class="p">):</span>
+    <span class="n">install</span> <span class="o">=</span> <span class="n">install</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot;,&quot;</span><span class="p">,</span> <span class="s2">&quot;&quot;</span><span class="p">)</span>
+    <span class="n">install</span> <span class="o">=</span> <span class="n">install</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot;+&quot;</span><span class="p">,</span> <span class="s2">&quot;&quot;</span><span class="p">)</span>
+    <span class="k">return</span> <span class="nb">float</span><span class="p">(</span><span class="n">install</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[33]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">map_category_rating</span> <span class="o">=</span> <span class="p">{}</span>
+<span class="k">for</span> <span class="n">app</span> <span class="ow">in</span> <span class="n">free_android_english</span><span class="p">:</span>
+    <span class="n">category</span> <span class="o">=</span> <span class="n">app</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+    <span class="n">install</span> <span class="o">=</span> <span class="n">clean_convert_install</span><span class="p">(</span><span class="n">app</span><span class="p">[</span><span class="mi">5</span><span class="p">])</span>
+    
+    <span class="k">if</span> <span class="n">category</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">map_category_rating</span><span class="p">:</span>
+        <span class="n">map_category_rating</span><span class="p">[</span><span class="n">category</span><span class="p">]</span> <span class="o">=</span> <span class="n">install</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">map_category_rating</span><span class="p">[</span><span class="n">category</span><span class="p">]</span> <span class="o">+=</span> <span class="n">install</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[34]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">most_popular_category</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="k">for</span> <span class="n">category</span><span class="p">,</span> <span class="n">number</span> <span class="ow">in</span> <span class="n">category_freq_table</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+    <span class="n">total</span> <span class="o">=</span> <span class="n">map_category_rating</span><span class="p">[</span><span class="n">category</span><span class="p">]</span>
+    <span class="n">average_rating_per_category</span> <span class="o">=</span> <span class="n">total</span> <span class="o">/</span> <span class="n">number</span>
+    <span class="n">most_popular_category</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="n">category</span><span class="p">,</span> <span class="n">average_rating_per_category</span><span class="p">))</span>
+    
+<span class="n">sorted_popular_category</span> <span class="o">=</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">most_popular_category</span><span class="p">,</span> <span class="n">key</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">elem</span><span class="p">:</span> <span class="n">elem</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span>
+                             <span class="n">reverse</span> <span class="o">=</span> <span class="kc">True</span><span class="p">)</span>
+
+<span class="k">for</span> <span class="n">elem</span> <span class="ow">in</span> <span class="n">sorted_popular_category</span><span class="p">:</span>
+    <span class="n">category_name</span> <span class="o">=</span> <span class="n">elem</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+    <span class="n">average_ratng</span> <span class="o">=</span> <span class="n">elem</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;</span><span class="si">{}</span><span class="s1">:</span><span class="si">{:.2f}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">category_name</span><span class="p">,</span> <span class="n">average_ratng</span><span class="p">))</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>COMMUNICATION:38456119.17
+VIDEO_PLAYERS:24727872.45
+SOCIAL:23253652.13
+PHOTOGRAPHY:17840110.40
+PRODUCTIVITY:16787331.34
+GAME:15588015.60
+TRAVEL_AND_LOCAL:13984077.71
+ENTERTAINMENT:11640705.88
+TOOLS:10801391.30
+NEWS_AND_MAGAZINES:9549178.47
+BOOKS_AND_REFERENCE:8767811.89
+SHOPPING:7036877.31
+PERSONALIZATION:5201482.61
+WEATHER:5074486.20
+HEALTH_AND_FITNESS:4188821.99
+MAPS_AND_NAVIGATION:4056941.77
+FAMILY:3695641.82
+SPORTS:3638640.14
+ART_AND_DESIGN:1986335.09
+FOOD_AND_DRINK:1924897.74
+EDUCATION:1833495.15
+BUSINESS:1712290.15
+LIFESTYLE:1437816.27
+FINANCE:1387692.48
+HOUSE_AND_HOME:1331540.56
+DATING:854028.83
+COMICS:817657.27
+AUTO_AND_VEHICLES:647317.82
+LIBRARIES_AND_DEMO:638503.73
+PARENTING:542603.62
+BEAUTY:513151.89
+EVENTS:253542.22
+MEDICAL:120550.62
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>On average, communication apps have the most installs: 38,456,119. This number is heavily skewed up by a few apps that have over one billion installs (WhatsApp, Facebook Messenger, Skype, Google Chrome, Gmail, and Hangouts), and a few others with over 100 and 500 million installs:</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[35]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">app</span> <span class="ow">in</span> <span class="n">free_android_english</span><span class="p">:</span>
+    <span class="k">if</span> <span class="n">app</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;COMMUNICATION&#39;</span> <span class="ow">and</span> <span class="p">(</span><span class="n">app</span><span class="p">[</span><span class="mi">5</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;1,000,000,000+&#39;</span>
+                                      <span class="ow">or</span> <span class="n">app</span><span class="p">[</span><span class="mi">5</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;500,000,000+&#39;</span>
+                                      <span class="ow">or</span> <span class="n">app</span><span class="p">[</span><span class="mi">5</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;100,000,000+&#39;</span><span class="p">):</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">app</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="s1">&#39;:&#39;</span><span class="p">,</span> <span class="n">app</span><span class="p">[</span><span class="mi">5</span><span class="p">])</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>WhatsApp Messenger : 1,000,000,000+
+imo beta free calls and text : 100,000,000+
+Android Messages : 100,000,000+
+Google Duo - High Quality Video Calls : 500,000,000+
+Messenger – Text and Video Chat for Free : 1,000,000,000+
+imo free video calls and chat : 500,000,000+
+Skype - free IM &amp; video calls : 1,000,000,000+
+Who : 100,000,000+
+GO SMS Pro - Messenger, Free Themes, Emoji : 100,000,000+
+LINE: Free Calls &amp; Messages : 500,000,000+
+Google Chrome: Fast &amp; Secure : 1,000,000,000+
+Firefox Browser fast &amp; private : 100,000,000+
+UC Browser - Fast Download Private &amp; Secure : 500,000,000+
+Gmail : 1,000,000,000+
+Hangouts : 1,000,000,000+
+Messenger Lite: Free Calls &amp; Messages : 100,000,000+
+Kik : 100,000,000+
+KakaoTalk: Free Calls &amp; Text : 100,000,000+
+Opera Mini - fast web browser : 100,000,000+
+Opera Browser: Fast and Secure : 100,000,000+
+Telegram : 100,000,000+
+Truecaller: Caller ID, SMS spam blocking &amp; Dialer : 100,000,000+
+UC Browser Mini -Tiny Fast Private &amp; Secure : 100,000,000+
+Viber Messenger : 500,000,000+
+WeChat : 100,000,000+
+Yahoo Mail – Stay Organized : 100,000,000+
+BBM - Free Calls &amp; Messages : 100,000,000+
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>We see the same pattern for the video players category, which is the runner-up with 24,727,872 installs. The market is dominated by apps like Youtube, Google Play Movies &amp; TV, or MX Player. The pattern is repeated for social apps (where we have giants like Facebook, Instagram, Google+, etc.), photography apps (Google Photos and other popular photo editors), or productivity apps (Microsoft Word, Dropbox, Google Calendar, Evernote, etc.).</p>
+<p>Again, the main concern is that these app genres might seem more popular than they really are. Moreover, these niches seem to be dominated by a few giants who are hard to compete against.</p>
+<p>The game genre seems pretty popular, but previously we found out this part of the market seems a bit saturated, so we'd like to come up with a different app recommendation if possible.</p>
+<p>The books and reference genre looks fairly popular as well, with an average number of installs of 8,767,811. It's interesting to explore this in more depth, since we found this genre has some potential to work well on the App Store, and our aim is to recommend an app genre that shows potential for being profitable on both the App Store and Google Play</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[36]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">app</span> <span class="ow">in</span> <span class="n">free_android_english</span><span class="p">:</span>
+    <span class="k">if</span> <span class="n">app</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;BOOKS_AND_REFERENCE&#39;</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">app</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="s1">&#39;:&#39;</span><span class="p">,</span> <span class="n">app</span><span class="p">[</span><span class="mi">5</span><span class="p">])</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>E-Book Read - Read Book for free : 50,000+
+Download free book with green book : 100,000+
+Wikipedia : 10,000,000+
+Cool Reader : 10,000,000+
+Free Panda Radio Music : 100,000+
+Book store : 1,000,000+
+FBReader: Favorite Book Reader : 10,000,000+
+English Grammar Complete Handbook : 500,000+
+Free Books - Spirit Fanfiction and Stories : 1,000,000+
+Google Play Books : 1,000,000,000+
+AlReader -any text book reader : 5,000,000+
+Offline English Dictionary : 100,000+
+Offline: English to Tagalog Dictionary : 500,000+
+FamilySearch Tree : 1,000,000+
+Cloud of Books : 1,000,000+
+Recipes of Prophetic Medicine for free : 500,000+
+ReadEra – free ebook reader : 1,000,000+
+Anonymous caller detection : 10,000+
+Ebook Reader : 5,000,000+
+Litnet - E-books : 100,000+
+Read books online : 5,000,000+
+English to Urdu Dictionary : 500,000+
+eBoox: book reader fb2 epub zip : 1,000,000+
+English Persian Dictionary : 500,000+
+Flybook : 500,000+
+All Maths Formulas : 1,000,000+
+Ancestry : 5,000,000+
+HTC Help : 10,000,000+
+English translation from Bengali : 100,000+
+Pdf Book Download - Read Pdf Book : 100,000+
+Free Book Reader : 100,000+
+eBoox new: Reader for fb2 epub zip books : 50,000+
+Only 30 days in English, the guideline is guaranteed : 500,000+
+Moon+ Reader : 10,000,000+
+SH-02J Owner&#39;s Manual (Android 8.0) : 50,000+
+English-Myanmar Dictionary : 1,000,000+
+Golden Dictionary (EN-AR) : 1,000,000+
+All Language Translator Free : 1,000,000+
+Azpen eReader : 500,000+
+URBANO V 02 instruction manual : 100,000+
+Bible : 100,000,000+
+C Programs and Reference : 50,000+
+C Offline Tutorial : 1,000+
+C Programs Handbook : 50,000+
+Amazon Kindle : 100,000,000+
+Aab e Hayat Full Novel : 100,000+
+Aldiko Book Reader : 10,000,000+
+Google I/O 2018 : 500,000+
+R Language Reference Guide : 10,000+
+Learn R Programming Full : 5,000+
+R Programing Offline Tutorial : 1,000+
+Guide for R Programming : 5+
+Learn R Programming : 10+
+R Quick Reference Big Data : 1,000+
+V Made : 100,000+
+Wattpad 📖 Free Books : 100,000,000+
+Dictionary - WordWeb : 5,000,000+
+Guide (for X-MEN) : 100,000+
+AC Air condition Troubleshoot,Repair,Maintenance : 5,000+
+AE Bulletins : 1,000+
+Ae Allah na Dai (Rasa) : 10,000+
+50000 Free eBooks &amp; Free AudioBooks : 5,000,000+
+Ag PhD Field Guide : 10,000+
+Ag PhD Deficiencies : 10,000+
+Ag PhD Planting Population Calculator : 1,000+
+Ag PhD Soybean Diseases : 1,000+
+Fertilizer Removal By Crop : 50,000+
+A-J Media Vault : 50+
+Al-Quran (Free) : 10,000,000+
+Al Quran (Tafsir &amp; by Word) : 500,000+
+Al Quran Indonesia : 10,000,000+
+Al&#39;Quran Bahasa Indonesia : 10,000,000+
+Al Quran Al karim : 1,000,000+
+Al-Muhaffiz : 50,000+
+Al Quran : EAlim - Translations &amp; MP3 Offline : 5,000,000+
+Al-Quran 30 Juz free copies : 500,000+
+Koran Read &amp;MP3 30 Juz Offline : 1,000,000+
+Hafizi Quran 15 lines per page : 1,000,000+
+Quran for Android : 10,000,000+
+Surah Al-Waqiah : 100,000+
+Hisnul Al Muslim - Hisn Invocations &amp; Adhkaar : 100,000+
+Satellite AR : 1,000,000+
+Audiobooks from Audible : 100,000,000+
+Kinot &amp; Eichah for Tisha B&#39;Av : 10,000+
+AW Tozer Devotionals - Daily : 5,000+
+Tozer Devotional -Series 1 : 1,000+
+The Pursuit of God : 1,000+
+AY Sing : 5,000+
+Ay Hasnain k Nana Milad Naat : 10,000+
+Ay Mohabbat Teri Khatir Novel : 10,000+
+Arizona Statutes, ARS (AZ Law) : 1,000+
+Oxford A-Z of English Usage : 1,000,000+
+BD Fishpedia : 1,000+
+BD All Sim Offer : 10,000+
+Youboox - Livres, BD et magazines : 500,000+
+B&amp;H Kids AR : 10,000+
+B y H Niños ES : 5,000+
+Dictionary.com: Find Definitions for English Words : 10,000,000+
+English Dictionary - Offline : 10,000,000+
+Bible KJV : 5,000,000+
+Borneo Bible, BM Bible : 10,000+
+MOD Black for BM : 100+
+BM Box : 1,000+
+Anime Mod for BM : 100+
+NOOK: Read eBooks &amp; Magazines : 10,000,000+
+NOOK Audiobooks : 500,000+
+NOOK App for NOOK Devices : 500,000+
+Browsery by Barnes &amp; Noble : 5,000+
+bp e-store : 1,000+
+Brilliant Quotes: Life, Love, Family &amp; Motivation : 1,000,000+
+BR Ambedkar Biography &amp; Quotes : 10,000+
+BU Alsace : 100+
+Catholic La Bu Zo Kam : 500+
+Khrifa Hla Bu (Solfa) : 10+
+Kristian Hla Bu : 10,000+
+SA HLA BU : 1,000+
+Learn SAP BW : 500+
+Learn SAP BW on HANA : 500+
+CA Laws 2018 (California Laws and Codes) : 5,000+
+Bootable Methods(USB-CD-DVD) : 10,000+
+cloudLibrary : 100,000+
+SDA Collegiate Quarterly : 500+
+Sabbath School : 100,000+
+Cypress College Library : 100+
+Stats Royale for Clash Royale : 1,000,000+
+GATE 21 years CS Papers(2011-2018 Solved) : 50+
+Learn CT Scan Of Head : 5,000+
+Easy Cv maker 2018 : 10,000+
+How to Write CV : 100,000+
+CW Nuclear : 1,000+
+CY Spray nozzle : 10+
+BibleRead En Cy Zh Yue : 5+
+CZ-Help : 5+
+Modlitební knížka CZ : 500+
+Guide for DB Xenoverse : 10,000+
+Guide for DB Xenoverse 2 : 10,000+
+Guide for IMS DB : 10+
+DC HSEMA : 5,000+
+DC Public Library : 1,000+
+Painting Lulu DC Super Friends : 1,000+
+Dictionary : 10,000,000+
+Fix Error Google Playstore : 1,000+
+D. H. Lawrence Poems FREE : 1,000+
+Bilingual Dictionary Audio App : 5,000+
+DM Screen : 10,000+
+wikiHow: how to do anything : 1,000,000+
+Dr. Doug&#39;s Tips : 1,000+
+Bible du Semeur-BDS (French) : 50,000+
+La citadelle du musulman : 50,000+
+DV 2019 Entry Guide : 10,000+
+DV 2019 - EDV Photo &amp; Form : 50,000+
+DV 2018 Winners Guide : 1,000+
+EB Annual Meetings : 1,000+
+EC - AP &amp; Telangana : 5,000+
+TN Patta Citta &amp; EC : 10,000+
+AP Stamps and Registration : 10,000+
+CompactiMa EC pH Calibration : 100+
+EGW Writings 2 : 100,000+
+EGW Writings : 1,000,000+
+Bible with EGW Comments : 100,000+
+My Little Pony AR Guide : 1,000,000+
+SDA Sabbath School Quarterly : 500,000+
+Duaa Ek Ibaadat : 5,000+
+Spanish English Translator : 10,000,000+
+Dictionary - Merriam-Webster : 10,000,000+
+JW Library : 10,000,000+
+Oxford Dictionary of English : Free : 10,000,000+
+English Hindi Dictionary : 10,000,000+
+English to Hindi Dictionary : 5,000,000+
+EP Research Service : 1,000+
+Hymnes et Louanges : 100,000+
+EU Charter : 1,000+
+EU Data Protection : 1,000+
+EU IP Codes : 100+
+EW PDF : 5+
+BakaReader EX : 100,000+
+EZ Quran : 50,000+
+FA Part 1 &amp; 2 Past Papers Solved Free – Offline : 5,000+
+La Fe de Jesus : 1,000+
+La Fe de Jesús : 500+
+Le Fe de Jesus : 500+
+Florida - Pocket Brainbook : 1,000+
+Florida Statutes (FL Code) : 1,000+
+English To Shona Dictionary : 10,000+
+Greek Bible FP (Audio) : 1,000+
+Golden Dictionary (FR-AR) : 500,000+
+Fanfic-FR : 5,000+
+Bulgarian French Dictionary Fr : 10,000+
+Chemin (fr) : 1,000+
+The SCP Foundation DB fr nn5n : 1,000+
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>The book and reference genre includes a variety of apps: software for processing and reading ebooks, various collections of libraries, dictionaries, tutorials on programming or languages, etc. It seems there's still a small number of extremely popular apps that skew the average:</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[37]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">app</span> <span class="ow">in</span> <span class="n">free_android_english</span><span class="p">:</span>
+    <span class="k">if</span> <span class="n">app</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;BOOKS_AND_REFERENCE&#39;</span> <span class="ow">and</span> <span class="p">(</span><span class="n">app</span><span class="p">[</span><span class="mi">5</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;1,000,000,000+&#39;</span>
+                                            <span class="ow">or</span> <span class="n">app</span><span class="p">[</span><span class="mi">5</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;500,000,000+&#39;</span>
+                                            <span class="ow">or</span> <span class="n">app</span><span class="p">[</span><span class="mi">5</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;100,000,000+&#39;</span><span class="p">):</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">app</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="s1">&#39;:&#39;</span><span class="p">,</span> <span class="n">app</span><span class="p">[</span><span class="mi">5</span><span class="p">])</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Google Play Books : 1,000,000,000+
+Bible : 100,000,000+
+Amazon Kindle : 100,000,000+
+Wattpad 📖 Free Books : 100,000,000+
+Audiobooks from Audible : 100,000,000+
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>However, it looks like there are only a few very popular apps, so this market still shows potential. Let's try to get some app ideas based on the kind of apps that are somewhere in the middle in terms of popularity (between 1,000,000 and 100,000,000 downloads):</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[38]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">app</span> <span class="ow">in</span> <span class="n">free_android_english</span><span class="p">:</span>
+    <span class="k">if</span> <span class="n">app</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;BOOKS_AND_REFERENCE&#39;</span> <span class="ow">and</span> <span class="p">(</span><span class="n">app</span><span class="p">[</span><span class="mi">5</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;1,000,000+&#39;</span>
+                                            <span class="ow">or</span> <span class="n">app</span><span class="p">[</span><span class="mi">5</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;5,000,000+&#39;</span>
+                                            <span class="ow">or</span> <span class="n">app</span><span class="p">[</span><span class="mi">5</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;10,000,000+&#39;</span>
+                                            <span class="ow">or</span> <span class="n">app</span><span class="p">[</span><span class="mi">5</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;50,000,000+&#39;</span><span class="p">):</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">app</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="s1">&#39;:&#39;</span><span class="p">,</span> <span class="n">app</span><span class="p">[</span><span class="mi">5</span><span class="p">])</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Wikipedia : 10,000,000+
+Cool Reader : 10,000,000+
+Book store : 1,000,000+
+FBReader: Favorite Book Reader : 10,000,000+
+Free Books - Spirit Fanfiction and Stories : 1,000,000+
+AlReader -any text book reader : 5,000,000+
+FamilySearch Tree : 1,000,000+
+Cloud of Books : 1,000,000+
+ReadEra – free ebook reader : 1,000,000+
+Ebook Reader : 5,000,000+
+Read books online : 5,000,000+
+eBoox: book reader fb2 epub zip : 1,000,000+
+All Maths Formulas : 1,000,000+
+Ancestry : 5,000,000+
+HTC Help : 10,000,000+
+Moon+ Reader : 10,000,000+
+English-Myanmar Dictionary : 1,000,000+
+Golden Dictionary (EN-AR) : 1,000,000+
+All Language Translator Free : 1,000,000+
+Aldiko Book Reader : 10,000,000+
+Dictionary - WordWeb : 5,000,000+
+50000 Free eBooks &amp; Free AudioBooks : 5,000,000+
+Al-Quran (Free) : 10,000,000+
+Al Quran Indonesia : 10,000,000+
+Al&#39;Quran Bahasa Indonesia : 10,000,000+
+Al Quran Al karim : 1,000,000+
+Al Quran : EAlim - Translations &amp; MP3 Offline : 5,000,000+
+Koran Read &amp;MP3 30 Juz Offline : 1,000,000+
+Hafizi Quran 15 lines per page : 1,000,000+
+Quran for Android : 10,000,000+
+Satellite AR : 1,000,000+
+Oxford A-Z of English Usage : 1,000,000+
+Dictionary.com: Find Definitions for English Words : 10,000,000+
+English Dictionary - Offline : 10,000,000+
+Bible KJV : 5,000,000+
+NOOK: Read eBooks &amp; Magazines : 10,000,000+
+Brilliant Quotes: Life, Love, Family &amp; Motivation : 1,000,000+
+Stats Royale for Clash Royale : 1,000,000+
+Dictionary : 10,000,000+
+wikiHow: how to do anything : 1,000,000+
+EGW Writings : 1,000,000+
+My Little Pony AR Guide : 1,000,000+
+Spanish English Translator : 10,000,000+
+Dictionary - Merriam-Webster : 10,000,000+
+JW Library : 10,000,000+
+Oxford Dictionary of English : Free : 10,000,000+
+English Hindi Dictionary : 10,000,000+
+English to Hindi Dictionary : 5,000,000+
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>This niche seems to be dominated by software for processing and reading ebooks, as well as various collections of libraries and dictionaries, so it's probably not a good idea to build similar apps since there'll be some significant competition.</p>
+<p>We also notice there are quite a few apps built around the book Quran, which suggests that building an app around a popular book can be profitable. It seems that taking a popular book (perhaps a more recent book) and turning it into an app could be profitable for both the Google Play and the App Store markets.</p>
+<p>However, it looks like the market is already full of libraries, so we need to add some special features besides the raw version of the book. This might include daily quotes from the book, an audio version of the book, quizzes on the book, a forum where people can discuss the book, etc.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Conclusions">Conclusions<a class="anchor-link" href="#Conclusions">&#182;</a></h2><p>In this project, we analyzed data about the App Store and Google Play mobile apps with the goal of recommending an app profile that can be profitable for both markets.</p>
+<p>We concluded that taking a popular book (perhaps a more recent book) and turning it into an app could be profitable for both the Google Play and the App Store markets. The markets are already full of libraries, so we need to add some special features besides the raw version of the book. This might include daily quotes from the book, an audio version of the book, quizzes on the book, a forum where people can discuss the book, etc.</p>
+
+</div>
+</div>
+</div>
+ 
+
+
+<script type="text/javascript">if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
+    var mathjaxscript = document.createElement('script');
+    mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
+    mathjaxscript.type = 'text/javascript';
+    mathjaxscript.src = '//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML';
+    mathjaxscript[(window.opera ? "innerHTML" : "text")] =
+        "MathJax.Hub.Config({" +
+        "    config: ['MMLorHTML.js']," +
+        "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'AMS' } }," +
+        "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
+        "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
+        "    displayAlign: 'center'," +
+        "    displayIndent: '0em'," +
+        "    showMathMenu: true," +
+        "    tex2jax: { " +
+        "        inlineMath: [ ['$','$'] ], " +
+        "        displayMath: [ ['$$','$$'] ]," +
+        "        processEscapes: true," +
+        "        preview: 'TeX'," +
+        "    }, " +
+        "    'HTML-CSS': { " +
+        " linebreaks: { automatic: true, width: '95% container' }, " +
+        "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'black ! important'} }" +
+        "    } " +
+        "}); ";
+    (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
+}
+</script>
         </div>
         <hr/>
         <aside>
@@ -186,7 +3520,7 @@ tex2jax: { inlineMath: [["$","$"],["\\(","\\)"]] },
             <div class="article-cell-2">
                 <div class="category">Data Analysis</div>
                 <h2 class="">Exploring Hacker News Post</h2>
-                <p class="excerpt"></p>
+                <p class="excerpt">In this post, I analyze the posts in Hacker News to identify the optimal timing for creating a post and the type of posts that recieve more comments and. Based on the analysis, the 'ask posts' recieve more comments than 'show posts' on average. Moreover, the 'ask posts' receieve 38.59 comments on average if a post is createed at 3.00pm in Eastern timezone.</p>
                 <div class="meta">
                     <div class="meta-left">
                         <i class="fa fa-calendar index-comment-icon"></i>
@@ -210,7 +3544,7 @@ tex2jax: { inlineMath: [["$","$"],["\\(","\\)"]] },
             <div class="article-cell-2">
                 <div class="category">Data Visualization</div>
                 <h2 class="">Finding Heavy Traffic Indicators</h2>
-                <p class="excerpt"></p>
+                <p class="excerpt">In this post, I analyze a dataset about the westbound traffic on the I-94 Interstate highway to determine a few indicators of heavy traffic on I-94. These indicators can be weather type, time of the day, time of the week, month of the year, etc.</p>
                 <div class="meta">
                     <div class="meta-left">
                         <i class="fa fa-calendar index-comment-icon"></i>
@@ -234,7 +3568,7 @@ tex2jax: { inlineMath: [["$","$"],["\\(","\\)"]] },
             <div class="article-cell-2">
                 <div class="category">Data Collection</div>
                 <h2 class="">Web scrapping data for English Premier League football matches</h2>
-                <p class="excerpt"></p>
+                <p class="excerpt">In this post, I web-scrap the scoring and shooting data for teams that played the last five seasons of EPL.</p>
                 <div class="meta">
                     <div class="meta-left">
                         <i class="fa fa-calendar index-comment-icon"></i>
@@ -258,7 +3592,7 @@ tex2jax: { inlineMath: [["$","$"],["\\(","\\)"]] },
             <div class="article-cell-2">
                 <div class="category">Machine Learning</div>
                 <h2 class="">Predicting the winner for English Premier League football matches</h2>
-                <p class="excerpt"></p>
+                <p class="excerpt">In this post, I build a pipeline for preprocessing web-scrapped data of EPL matches and predicting the winner of a match using machine learning.</p>
                 <div class="meta">
                     <div class="meta-left">
                         <i class="fa fa-calendar index-comment-icon"></i>
