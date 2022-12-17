@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+            <meta name="author" content="Apurba Kumar Saha" />
+
+
+
+                <meta property="og:type" content="article" />
+            <meta name="twitter:card" content="summary"/>
+
+    <link rel="canonical" href="https://apurba-saha.github.io">
+    <meta property="og:title" content="Apurba's DataScience Portfolio"/>
+    <meta name="twitter:title" content="Apurba's DataScience Portfolio"/>
+    <meta property="og:url" content="https://apurba-saha.github.io" />
+    <meta property="og:description" content="Cool data science projects using Python| by Apurba Saha" />
+    <meta name="twitter:description" content="Cool data science projects using Python| by Apurba Saha"/>
+    <meta property="og:site_name" content="Apurba&#39;s DataScience Portfolio" />
+    <meta property="og:article:author" content="Apurba Kumar Saha" />
+        <meta property="og:image" content="https://apurba-saha.github.io/theme/img/logo_icon_background.png" />
+        <meta name="twitter:image" content="https://apurba-saha.github.io/theme/img/logo_icon_background.png"/>
+
+        <title>Apurba's DataScience Portfolio - Machine Learning category</title>
+
+                <link rel="stylesheet" type="text/css" href="https://apurba-saha.github.io/theme/libs/bootstrap-4.2.1/dist/css/bootstrap.min.css">
+                <link rel="stylesheet" type="text/css" href="https://apurba-saha.github.io/theme/libs/fontawesome-free-5.2.0-web/css/all.min.css">
+            <link rel="stylesheet" type="text/css" href="https://apurba-saha.github.io/theme/css/custom.css" media="screen">
+            <link rel="stylesheet" type="text/css" href="https://apurba-saha.github.io/theme/css/ipynb.css" media="screen">
+
+            <style>
+                #progressBar::-webkit-progress-value {
+                    background-color: #24292e;
+                }
+                #progressBar::-moz-progress-bar {
+                    background-color: #24292e;
+                }
+            </style>
+
+        <link href="https://apurba-saha.github.io/theme/libs/prism.css" rel="stylesheet" />
+<script type="text/x-mathjax-config">
+
+MathJax.Hub.Config({
+tex2jax: { inlineMath: [["$","$"],["\\(","\\)"]] },
+"HTML-CSS": {
+  linebreaks: { automatic: true, width: "container" }
+}
+});
+
+</script>
+<script type="text/javascript"
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+        <link rel="shortcut icon" href="https://apurba-saha.github.io/theme/img/favicon.ico" type="image/x-icon" />
+        <link rel="icon" href="https://apurba-saha.github.io/theme/img/apple-touch-icon-152x152.png" type="image/png" />
+        <link rel="apple-touch-icon" href="https://apurba-saha.github.io/theme/img/apple-touch-icon.png"  type="image/png" />
+        <link rel="apple-touch-icon" sizes="57x57" href="https://apurba-saha.github.io/theme/img/apple-touch-icon-57x57.png" type="image/png" />
+        <link rel="apple-touch-icon" sizes="72x72" href="https://apurba-saha.github.io/theme/img/apple-touch-icon-72x72.png" type="image/png" />
+        <link rel="apple-touch-icon" sizes="76x76" href="https://apurba-saha.github.io/theme/img/apple-touch-icon-76x76.png" type="image/png" />
+        <link rel="apple-touch-icon" sizes="114x114" href="https://apurba-saha.github.io/theme/img/apple-touch-icon-114x114.png" type="image/png" />
+        <link rel="apple-touch-icon" sizes="120x120" href="https://apurba-saha.github.io/theme/img/apple-touch-icon-120x120.png" type="image/png" />
+        <link rel="apple-touch-icon" sizes="144x144" href="https://apurba-saha.github.io/theme/img/apple-touch-icon-144x144.png" type="image/png" />
+        <link rel="apple-touch-icon" sizes="152x152" href="https://apurba-saha.github.io/theme/img/apple-touch-icon-152x152.png" type="image/png" />
+        <link href="https://apurba-saha.github.io/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Apurba&#39;s DataScience Portfolio - Full Atom Feed" />
+    </head>
+    <body>
+<progress id="progressBar" max="19827" class="flat">
+    <div class="progress-container">
+        <span class="progress-bar"></span>
+    </div>
+</progress>        <div class="banner-wrapper row" style="background-color: #24292e;">
+            <div class="banner">
+                <nav id="navbar" class="navbar navbar-expand-md navbar-light bg-light container">
+                    <div class="container navbar-title">
+                        <a href="/"><img id="banner-logo" src="https://apurba-saha.github.io/theme/img/logo_with_subtitle.svg" style="height: 40px; margin: 6px 0;"></a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    </div>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent" style="margin-bottom: 6.5px;margin-top: 6.5px">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link rem_08" href="https://apurba-saha.github.io/about.html">About</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav">
+                        <li id="second-item" class="nav-item">
+                            <a class="nav-link rem_08" href="https://apurba-saha.github.io/archives.html">Archive</a>
+                        </li>
+                     </ul>
+                    <ul class="navbar-nav">
+                    <form id="search-form" class="form-inline my-2 my-lg-0 justify-content-center" action="https://apurba-saha.github.io/search.html">
+                        <div id="third-item" class="search-box-div row" style="margin-top:-3.5px;">
+                            <input id="tipue_search_input" class="form-control mr-md-2 rem_08 col-9" type="text" name="q" pattern=".{3,}" title="At least 3 characters" required="" aria-label="Search"/>
+                            <button id="search-btn" class="btn btn-search btn-outline-success btn-circle rem_08 col-3" type="submit" for="tipue_search_input" style="margin-left: 3px;">Search</button>
+                        </div>
+                    </form>
+                    </ul>
+                </div>
+                </nav>
+            </div>
+        </div>
+        <div id="wrap">
+    <div class="row mb-5 ml-0 mr-0">
+        <div class="justify-content-end col-lg-3 col-md-12 index-left-col tr-effect">
+            <div class="index-scroll-container">
+                <div class="profile row no-margin pop-over">
+                    <div class="index-author tr-effect">
+                        <div class="mr-4">
+                            <img src="theme/img/profile_photo_footer.jpg" class="index-author-photo" alt="">
+                        </div>
+                        <div class="name-subtitle">
+                            <div class="col no-padding">
+                                <h3 class="author__name"></h3>
+                            </div>
+                            <div class="col no-padding">
+                                <p class="author__bio">PhD Student, University of Arizona</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contacts no-link mt-1 tr-effect">
+                        <div class="">
+                            <p><i class="fas fa-map-marker-alt" aria-hidden="true" style="margin-right: 6px;margin-left: 2px;"></i>Arizona, USA</p>
+                            <p><i class="far fa-envelope" aria-hidden="true" style="margin-right: 8px;"></i>apurba.saha.ipe@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contacts link mt-1 tr-effect">
+                        <div class="">
+                            <p><a href="https://linkedin.com/in/apurba-kumar-saha/" class="color-inherit" target="_blank"><i class="fab fa-linkedin-in" aria-hidden="true" style="margin-right: 8px;"></i> LinkedIn</a></p>
+                            <p><a href="https://github.com/apurba-saha/" class="color-inherit" target="_blank"><i class="fab fa-github" aria-hidden="true" style="margin-right: 5px;"></i> Github</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="fixme">
+                    <div class="read-next-card row no-margin pop-over" style="background-image: url('https://apurba-saha.github.io/theme/img/index_banner_image.jpg')">
+                        <header class="read-next-card-header">
+                            <small class="read-next-card-header-sitetitle">— Apurba's DataScience Portfolio —</small>
+                            <h3 class="read-next-card-header-title">MOST POPULAR</h3>
+                        </header>
+                        <div class="read-next-divider"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 14.5s2 3 5 3 5.5-2.463 5.5-5.5S21 6.5 18 6.5c-5 0-7 11-12 11C2.962 17.5.5 15.037.5 12S3 6.5 6 6.5s4.5 3.5 4.5 3.5"></path></svg>
+        </div>
+                        <div class="read-next-card-content">
+                            <ul>
+                                <li><a href="https://apurba-saha.github.io/predicting-the-winner-for-english-premier-league-football-matches">Predicting the winner for English Premier League football matches</a></li>
+                                <li><a href="https://apurba-saha.github.io/web-scrapping-data-for-english-premier-league-football-matches">Web scrapping data for English Premier League football matches</a></li>
+                            </ul>
+                        </div>
+                        <div class="read-next-card-footer">
+                            <a href="https://apurba-saha.github.io/archives.html">Go to Archive →</a>
+                        </div>
+                    </div>
+                    <div class="tagcloud-container row no-margin pop-over">
+                        <p class="title">TAG CLOUD</p>
+                        <ul class="tagcloud">
+                                <li class="tag-4">
+                                    <a href="https://apurba-saha.github.io/tag/data-visualization.html">
+                                    data visualization
+                                    </a>
+                                </li>
+                                <li class="tag-4">
+                                    <a href="https://apurba-saha.github.io/tag/web-scrapping.html">
+                                    web-scrapping
+                                    </a>
+                                </li>
+                                <li class="tag-4">
+                                    <a href="https://apurba-saha.github.io/tag/feature-selection.html">
+                                    feature selection
+                                    </a>
+                                </li>
+                                <li class="tag-4">
+                                    <a href="https://apurba-saha.github.io/tag/android.html">
+                                    android
+                                    </a>
+                                </li>
+                                <li class="tag-4">
+                                    <a href="https://apurba-saha.github.io/tag/feature-engineering.html">
+                                    feature engineering
+                                    </a>
+                                </li>
+                                <li class="tag-4">
+                                    <a href="https://apurba-saha.github.io/tag/traffic-indicators.html">
+                                    traffic indicators
+                                    </a>
+                                </li>
+                                <li class="tag-4">
+                                    <a href="https://apurba-saha.github.io/tag/imputation.html">
+                                    imputation
+                                    </a>
+                                </li>
+                                <li class="tag-4">
+                                    <a href="https://apurba-saha.github.io/tag/epl-winner.html">
+                                    EPL winner
+                                    </a>
+                                </li>
+                                <li class="tag-4">
+                                    <a href="https://apurba-saha.github.io/tag/beautiful-soup.html">
+                                    beautiful-soup
+                                    </a>
+                                </li>
+                                <li class="tag-4">
+                                    <a href="https://apurba-saha.github.io/tag/machine-learning.html">
+                                    machine learning
+                                    </a>
+                                </li>
+                                <li class="tag-4">
+                                    <a href="https://apurba-saha.github.io/tag/app.html">
+                                    app
+                                    </a>
+                                </li>
+                                <li class="tag-4">
+                                    <a href="https://apurba-saha.github.io/tag/epl.html">
+                                    EPL
+                                    </a>
+                                </li>
+                                <li class="tag-1">
+                                    <a href="https://apurba-saha.github.io/tag/python.html">
+                                    python
+                                    </a>
+                                </li>
+                                <li class="tag-4">
+                                    <a href="https://apurba-saha.github.io/tag/ios.html">
+                                    ios
+                                    </a>
+                                </li>
+                                <li class="tag-4">
+                                    <a href="https://apurba-saha.github.io/tag/hacker-news.html">
+                                    Hacker News
+                                    </a>
+                                </li>
+                                <li class="tag-4">
+                                    <a href="https://apurba-saha.github.io/tag/post-analysis.html">
+                                    Post analysis
+                                    </a>
+                                </li>
+                                <li class="tag-4">
+                                    <a href="https://apurba-saha.github.io/tag/profiling.html">
+                                    profiling
+                                    </a>
+                                </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="post-container" class="index col-lg-9 col-md-12 mt-4 tr-effect">
+            <div class="pop-over">
+                <div class="article-row" onclick="window.location='https://apurba-saha.github.io/predicting-the-winner-for-english-premier-league-football-matches';">
+                    <div class="article-cell-1">
+                        <img class="article-img" src=""/>
+                    </div>
+                    <div class="article-cell-2">
+                        <div class="category">Machine Learning</div>
+                        <h2 class="">Predicting the winner for English Premier League football matches</h2>
+                        <p class="excerpt"></p>
+                        <div class="meta">
+                            <div class="col">
+                                <div class="row justify-content-between">
+                                    <div class="meta-left">
+                                        <i class="fa fa-calendar index-comment-icon"></i>
+                                        <span class="index-reading-time"></span>
+                                    </div>
+                                    <div class="meta-right">
+                                        <i class="far fa-clock index-comment-icon"></i>
+                                        <span class="index-reading-time"> min reading</span>
+                                        <i class="fas fa-comment index-comment-icon" href="https://apurba-saha.github.io/predicting-the-winner-for-english-premier-league-football-matches#disqus_thread"></i>
+                                        <a class="index-reading-time disqus-comment" href="https://apurba-saha.github.io/predicting-the-winner-for-english-premier-league-football-matches#disqus_thread"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'pythonic-excursions'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    } ());
+
+    $('.disqus-comment').each(function(){
+        var numCommentText = $(this).text(),
+            num = numCommentText.match(/\d+/g);
+        $(this).text(num)
+    });
+</script>
+        </div>
+<footer class="footer">
+   <div class="container bottom_border">
+      <div class="row">
+         <div class="col">
+            <h5 class="headin5_amrc col_white_amrc pt2">ABOUT Apurba</h5>
+            <!--headin5_amrc-->
+            <p class="mb10"><img id="profile_img" align="left" src="https://apurba-saha.github.io/theme/img/profile_photo_footer.jpg">Phd Student in the Department of Systems and Industrial Engineering at the University of Arizona, AZ, USA with strong engineering & statistical background. I am good at creating clean, easy-to-read codes for data analysis. My passion lies within the field of applied data science, and sharing my knowledge to the data science community.</p>
+            <p><i class="fa fa-envelope mr-2"></i>apurba.saha.ipe@gmail.com</p>
+         </div>
+      </div>
+   </div>
+   <div class="container">
+      <ul class="foote_bottom_ul_amrc">
+         <li><a href="/">HOME</a></li>
+         <li><a href="about.html">ABOUT</a></li>
+         <li><a href="archives.html">ARCHIVE</a></li>
+      </ul>
+      <!--foote_bottom_ul_amrc ends here-->
+      <p class="text-center">Handcrafted by me @2022</p>
+      <div class="container">
+          <div class="row justify-content-center">
+              <div class="row" align="center">
+                  <div class="footer-icon"><a href="https://linkedin.com/in/apurba-kumar-saha/"><i class="fab fa-linkedin-in"></i></a></div>
+                  <div class="footer-icon"><a href="https://github.com/apurba-saha/"><i class="fab fa-github"></i></a></div>
+              </div>
+          </div>
+      </div>
+
+      <!--social_footer_ul ends here-->
+   </div>
+</footer>
+            <script type="text/javascript" src="https://apurba-saha.github.io/theme/libs/jquery.min.js"></script>
+            <script type="text/javascript" src="https://apurba-saha.github.io/theme/libs/bootstrap-4.2.1/dist/js/bootstrap.bundle.min.js"></script>
+
+        <script src="https://apurba-saha.github.io/theme/libs/prism.js"></script>
+        <script src="https://apurba-saha.github.io/theme/libs/Countable.js"></script>
+
+        <script>
+            Prism.plugins.NormalizeWhitespace.setDefaults({
+                'remove-trailing': true,
+                'remove-indent': true,
+                'left-trim': true,
+                'right-trim': true,
+                /*'break-lines': 80,
+                'indent': 2,
+                'remove-initial-line-feed': false,
+                'tabs-to-spaces': 4,
+                'spaces-to-tabs': 4*/
+            });
+        </script>
+
+
+        <script type="text/javascript" src="https://apurba-saha.github.io/theme/js/custom.js"></script>
+            <script>
+                function validateForm(query)
+                {
+                    return (query.length > 0);
+                }
+            </script>
+    </body>
+</html>
+
