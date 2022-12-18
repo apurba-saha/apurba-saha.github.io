@@ -173,14 +173,14 @@ tex2jax: { inlineMath: [["$","$"],["\\(","\\)"]] },
     <script type="text/javascript" src="https://apurba-saha.github.io/theme/tipuesearch/tipuesearch_set.js"></script>
     <script type="text/javascript" src="https://apurba-saha.github.io/theme/tipuesearch/tipuesearch.min.js"></script>
 
+        <script src="https://apurba-saha.github.io/tipuesearch_content.js"></script>
 
     <script>
         $(document).ready(function() {
              $('#tipue_search_input').tipuesearch({
-                     'mode': 'live',
+                     'mode' : 'json',
                  'show': 10,
                  'newWindow': false,
-                     'liveDescription': '.article-content'
              });
         });
     </script>
