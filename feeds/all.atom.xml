@@ -1146,7 +1146,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 .highlight .il { color: #666666 } /* Literal.Number.Integer.Long */&lt;/style&gt;&lt;div class="cell border-box-sizing text_cell rendered"&gt;&lt;div class="prompt input_prompt"&gt;
 &lt;/div&gt;&lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;p&gt;The goal of this project is to predict the winner of a English Premier League match using machine learning. In a previous project, we web-scrapped the relevant data for EPL matches. The project can be found here. The web-scrapped data was saved into a file named "matches.csv". We directly use this file to import the data and build a machine learning model to predict the winner of a match.&lt;/p&gt;
+&lt;p&gt;The goal of this project is to predict the winner of a English Premier League match using machine learning. In a previous project, we web-scrapped the relevant data for EPL matches. The project can be found &lt;a href="https://apurba-saha.github.io/web-scrapping-data-for-english-premier-league-football-matches"&gt;here&lt;/a&gt;. The web-scrapped data was saved into a file named "matches.csv". We directly use this file to import the data and build a machine learning model to predict the winner of a match.&lt;/p&gt;
 
 &lt;/div&gt;
 &lt;/div&gt;
